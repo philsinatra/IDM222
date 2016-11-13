@@ -1,0 +1,21 @@
+.contain {
+  overflow: auto;
+  width: 100%;
+}
+
+header {
+  text-align: left;
+}
+
+main, aside {
+  float: left;
+}
+
+main {
+  padding-right: 1rem;
+  width: 60%;
+}
+
+aside {
+  width: 40%;
+}

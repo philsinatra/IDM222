@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filters</title>
+  <style>
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img { display: block; }
+  /* Try an example without -webkit- prefix. */
+  /* The review caniuse.com for requirements. */
+  .blur {
+    -webkit-filter: blur(8px);
+    filter: blur(8px);
+  }
+  .invert {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+  .gray {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    /* Do example without hover effect first. */
+    transition: all 0.6s ease-in-out;
+  }
+  .gray:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg">
+    <img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="blur">
+    <img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="invert">
+    <img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="gray">
+  </div>
+</body>
+</html>

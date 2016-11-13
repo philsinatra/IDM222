@@ -1,0 +1,86 @@
+/*
+#    /$$$$$$            /$$
+#   /$$__  $$          | $$
+#  | $$  \__/  /$$$$$$ | $$  /$$$$$$   /$$$$$$   /$$$$$$$
+#  | $$       /$$__  $$| $$ /$$__  $$ /$$__  $$ /$$_____/
+#  | $$      | $$  \ $$| $$| $$  \ $$| $$  \__/|  $$$$$$
+#  | $$    $$| $$  | $$| $$| $$  | $$| $$       \____  $$
+#  |  $$$$$$/|  $$$$$$/| $$|  $$$$$$/| $$       /$$$$$$$/
+#   \______/  \______/ |__/ \______/ |__/      |_______/
+*/
+$cs-white                       : #ffffff;
+$cs-black                       : #000000;
+
+$cs-gray-ultra-light            : #eeeeee;
+$cs-gray-light                  : #D5D6D2;
+$cs-gray-medium                 : #A7A8AA;
+$cs-gray-dark                   : #4D4F53;
+
+$cs-dark                        : #3c3b43;
+$cs-light                       : #f5f5f5;
+$cs-gray-cool                   : #5c6e8b;
+$cs-gray-coolest                : #3c414c;
+
+// Greens
+$cs-green                     : #26E859;
+$cs-green-darkest             : #30683F;
+$cs-green-dark                : #116828;
+$cs-green-light               : #6DEC8E;
+
+// Blues
+$cs-blue                     : #1bbde8;
+$cs-blue-darkest             : #0c5568;
+$cs-blue-dark                : #1593b5;
+$cs-blue-light               : #62cfec;
+
+// Oranges
+$cs-orange                     : #ff4800;
+$cs-orange-darkest             : #7F2400;
+$cs-orange-dark                : #CC3A00;
+$cs-orange-light               : #FF7F4C;
+
+$cs-compliment-light            : #E8262D;
+$cs-compliment-dark             : #9B0006;
+
+$cs-primary                     : $cs-orange;
+$cs-primary-darkest             : $cs-orange-darkest;
+$cs-primary-dark                : $cs-orange-dark;
+$cs-primary-light               : $cs-orange-light;
+
+/*
+#   /$$$$$$$$
+#  |__  $$__/
+#     | $$    /$$   /$$  /$$$$$$   /$$$$$$
+#     | $$   | $$  | $$ /$$__  $$ /$$__  $$
+#     | $$   | $$  | $$| $$  \ $$| $$$$$$$$
+#     | $$   | $$  | $$| $$  | $$| $$_____/
+#     | $$   |  $$$$$$$| $$$$$$$/|  $$$$$$$
+#     |__/    \____  $$| $$____/  \_______/
+#             /$$  | $$| $$
+#            |  $$$$$$/| $$
+#             \______/ |__/
+*/
+
+$font-sansserif: 'Hind', Arial, Helvetica, sans-serif;
+$font-serif    : Times, 'Times New Roman', serif;
+
+$base-font-size: 16px; // Sets the browser default size. Shouldn't need to change this.
+
+
+$border_radius: .3rem;
+/*
+#   /$$$$$$$                                /$$
+#  | $$__  $$                              | $$
+#  | $$  \ $$  /$$$$$$   /$$$$$$   /$$$$$$ | $$   /$$  /$$$$$$$
+#  | $$$$$$$  /$$__  $$ /$$__  $$ |____  $$| $$  /$$/ /$$_____/
+#  | $$__  $$| $$  \__/| $$$$$$$$  /$$$$$$$| $$$$$$/ |  $$$$$$
+#  | $$  \ $$| $$      | $$_____/ /$$__  $$| $$_  $$  \____  $$
+#  | $$$$$$$/| $$      |  $$$$$$$|  $$$$$$$| $$ \  $$ /$$$$$$$/
+#  |_______/ |__/       \_______/ \_______/|__/  \__/|_______/
+#
+#
+#
+*/
+$break_small: 48rem;
+$break_medium: 64rem;
+$break_large: 68.75rem;

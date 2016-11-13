@@ -1,0 +1,12 @@
+body {
+  background-color: #900;
+}
+
+header {
+  background-color: red;
+}
+
+main,
+aside {
+  width: 50%;
+}

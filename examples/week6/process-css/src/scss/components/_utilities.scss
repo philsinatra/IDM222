@@ -1,0 +1,38 @@
+@mixin color_transition
+{
+    @include transition-property(color);
+    @include transition-duration(.3s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.hidden-mobile
+{
+    @media (max-width: 767px)
+    {
+        display: none;
+    }
+}
+
+.is-centered
+{
+    text-align: center;
+}
+
+.is-hidden
+{
+    display: none;
+}
+
+.pull-left
+{
+    float: left;
+}
+.pull-right
+{
+    float: right;
+}
+
+.pad-bottom
+{
+    padding-bottom: 2em;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions</title>
+  <style>
+  #accordian div {
+    overflow: hidden;
+    height: 0;
+    transition: height 1s ease-in-out;
+  }
+  #accordian div:target {
+    height: 120px;
+  }
+  </style>
+</head>
+<body>
+  <h1>FAQs</h1>
+  <div id="accordian">
+
+    <!-- (h3>a[href="#Q$"]^div#Q$)*3 -->
+
+    <h3><a href="#Q1">Why is the floor wet Todd?</a></h3>
+    <div id="Q1">I dont' know Margo.</div>
+
+    <h3><a href="#Q2">Who ya gonna call?</a></h3>
+    <div id="Q2">The Ghostbusters.</div>
+
+    <h3><a href="#Q3">You want the truth?</a></h3>
+    <div id="Q3">You can't handle the truth.</div>
+
+  </div>
+</body>
+</html>

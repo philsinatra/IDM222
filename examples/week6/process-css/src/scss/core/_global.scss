@@ -1,0 +1,33 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    height: 100%;
+}
+
+html
+{
+    font-size: $base-font-size;
+}
+
+body
+{
+    font: normal 100%/1.4 $font-sansserif;
+
+    border-top: 2px solid $cs_primary-darkest;
+    background-color: $cs-white;
+
+    @include advancedtype;
+}
+
+img,
+embed,
+object,
+video
+{
+    max-width: 100%; height: auto;
+}

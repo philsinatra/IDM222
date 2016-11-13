@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation</title>
+  <style>
+  /* 1. H1 example of looping animation. */
+  h1 {
+    animation: moveright 3s 2s infinite ease-in-out alternate;
+  }
+
+  @keyframes moveright {
+    from {
+      color: blue;
+      margin-left: 20%;
+    }
+    to {
+      color: red;
+      margin-left: 60%;
+    }
+  }
+  /* 2. H2 example of finite animation. */
+  h2 {
+    animation: crazy 6s ease-in-out forwards;
+    opacity: 0;
+    position: absolute;
+  }
+
+  @keyframes crazy {
+    0% { left: 0%; top: 0; color: blue; }
+    20% { left: 90%; top: 30%; color: red; opacity: 1; }
+    80% { left: 40%; top: 60%; color: green; }
+    100% { left: 0; top: 0; color: purple; opacity: 1; transform: rotate(720deg); }
+  }
+  </style>
+</head>
+<body>
+  <h1>This text will animate.</h1>
+  <h2>So will this text.</h2>
+</body>
+</html>
