@@ -15,6 +15,7 @@
 - [Responsive Web Design](https://abookapart.com/products/responsive-web-design)
 - [Mobile First](https://abookapart.com/products/mobile-first)
 - [SASS For Web Beginners](https://abookapart.com/products/sass-for-web-designers)
+- [Working the Command Line](https://abookapart.com/products/working-the-command-line)
 
 ## HTML
 
