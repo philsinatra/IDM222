@@ -18,6 +18,10 @@
 }
 
 @media screen and (min-width: 600px) {
+  [class*="col-"] {
+    background-color: rgba(242, 33, 56, 0.2);
+    border: 1px solid rgba(249, 38, 114, 1);
+  }
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
