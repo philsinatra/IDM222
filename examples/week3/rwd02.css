@@ -3,7 +3,7 @@
 
 * { box-sizing: border-box; }
 
-html { font-size: 16px; }
+html { font-size: 100%; }
 
 body {
   background-color: #00527F;
