@@ -1,0 +1,17 @@
+.header button
+{
+    float: right;
+
+    height: 2.75rem;
+    margin-top: 3px;
+
+    border: none;
+    background-color: transparent;
+}
+@media screen and (min-width: 48em)
+{
+    .header button
+    {
+        display: none;
+    }
+}

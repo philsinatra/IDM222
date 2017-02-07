@@ -50,7 +50,11 @@ body {
 }
 
 @media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
+  .main    {
+    /* flex-grow: 3 times in size
+       flex-shrink: 0 (do not shrink) */
+    flex: 3 0;
+  }
   .aside-1 { order: 1; }
   .main    { order: 2; }
   .aside-2 { order: 3; }

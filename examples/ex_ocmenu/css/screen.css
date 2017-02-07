@@ -1,0 +1,113 @@
+*
+{
+    box-sizing: border-box;
+}
+html
+{
+    font-size: 100%;
+}
+.visually-hidden
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px;
+    height: 1px;
+}
+
+.header
+{
+    min-height: 2.94rem;
+
+    background-color: #1a1a1a;
+}
+
+.header button svg
+{
+    width: 2em;
+    height: 2em;
+}
+.header nav ul
+{
+    margin: 0;
+    padding: 2.94rem 0 0;
+
+    list-style: none;
+}
+@media screen and (min-width: 48em)
+{
+    .header nav ul
+    {
+        display: flex;
+
+        padding: 0;
+
+        text-align: center;
+
+        justify-content: flex-end;
+    }
+}
+.header nav ul li a
+{
+    font-weight: bold;
+
+    display: block;
+
+    padding: 1rem 2rem;
+
+    transition: background-color .3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: white;
+    border-bottom: 1px solid #1976d2;
+    background-color: #1565c0;
+}
+@media screen and (min-width: 48em)
+{
+    .header nav ul li a
+    {
+        display: block;
+
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+
+        border: none;
+        background-color: transparent;
+    }
+}
+@media screen and (min-width: 64rem)
+{
+    .header nav ul li a
+    {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+}
+.header nav ul li a:hover,
+.header nav ul li a:focus,
+.header nav ul li a.active
+{
+    background-color: #1e88e5;
+}
+.header nav ul li a:active
+{
+    background-color: #1976d2;
+}
+@media screen and (min-width: 48em)
+{
+    .header nav ul li a:active
+    {
+        background-color: #1565c0;
+    }
+}
+.header nav ul li a svg
+{
+    position: relative;
+    top: .8rem;
+
+    width: 2rem;
+    height: 2rem;
+}
