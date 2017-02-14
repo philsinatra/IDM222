@@ -1,0 +1,79 @@
+.c_btn
+{
+    font-size: 1rem;
+    font-weight: normal;
+
+    display: inline-block;
+
+    padding: .5rem 1rem;
+
+    transition: background-color .3s ease-out;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-radius: $border_radius;
+}
+
+.c_btn--small
+{
+    font-size: .7rem;
+
+    padding: .5rem 1rem;
+}
+
+.c_btn--dark
+{
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: $cs-white;
+    background-color: $cs-gray-dark;
+
+    &:hover
+    {
+        background-color: $cs-black;
+        color: $cs_white !important;
+    }
+}
+
+.c_btn--dark-border
+{
+    color: $cs_black;
+    border: 3px solid $cs_black;
+    &:hover
+    {
+        color: $cs_white;
+        background-color: $cs_black;
+    }
+}
+
+.c_btn--clear
+{
+    background-color: transparent;
+}
+
+.o_footer__primary .c_btn-submit
+{
+    font-weight: bold;
+
+    display: block;
+
+    max-width: 8.13rem;
+    margin: 1rem 0;
+
+    transition: background-color .3s ease-out;
+    text-decoration: none;
+    text-transform: lowercase;
+
+    color: $cs_white;
+    border: .19rem solid $cs-primary;
+    background-color: $cs-primary;
+
+    &:hover
+    {
+        background-color: transparent;
+        color: $cs_white;
+    }
+}
