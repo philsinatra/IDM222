@@ -13,6 +13,11 @@ body
     font-family: 'Merriweather', serif;
 }
 
+img {
+  max-width: 100%;
+}
+
+
 /* Typesetting ------------------------------------------ */
 .wrapper
 {
