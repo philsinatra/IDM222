@@ -83,12 +83,15 @@ nav ul
 
     list-style: none;
 
+    /* Typesetting ------------------------------------------ */
     flex-direction: column;
+    /* ------------------------------------------------------ */
 
     justify-content: space-between;
     align-items: center;
 }
 
+/* Typesetting ------------------------------------------ */
 @media (min-width: 60rem)
 {
     nav ul
@@ -96,7 +99,7 @@ nav ul
         flex-direction: row;
     }
 }
-
+/* ------------------------------------------------------ */
 
 nav ul li:nth-child(1)
 {
@@ -124,14 +127,10 @@ nav ul li a:hover
     margin-bottom: 3rem;
 }
 
+/* Inside `main`, everything that follows everything. */
 main * + *
 {
     margin-top: 1.5rem;
-}
-
-* + h2
-{
-    margin-top: 1.5em;
 }
 
 main * + *:not(p)

@@ -13,6 +13,12 @@ body
     font-family: 'Merriweather', serif;
 }
 
+.wrapper
+{
+    max-width: 43.75rem;
+    margin: 0 auto;
+}
+
 .skiplink
 {
     font-size: .75rem;
@@ -79,12 +85,6 @@ nav ul li a:hover
     text-decoration: underline;
 }
 
-.wrapper
-{
-    max-width: 43.75rem;
-    margin: 0 auto;
-}
-
 .toc
 {
     margin-bottom: 3rem;
@@ -93,11 +93,6 @@ nav ul li a:hover
 main * + *
 {
     margin-top: 1.5rem;
-}
-
-* + h2
-{
-    margin-top: 1.5em;
 }
 
 main * + *:not(p)
