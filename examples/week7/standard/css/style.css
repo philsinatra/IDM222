@@ -8,19 +8,44 @@ html
     font-size: 100%;
 }
 
+/* Typesetting ------------------------------------------ */
+@media (min-width: 87.5em)
+{
+    html
+    {
+        /*
+    On larger screens we increase the font size.
+    Since our `.wrapper` max-width is based on rem units,
+    when the font size increases, the max-width also increases.
+    */
+        font-size: 150%;
+    }
+}
+/* ----------------------------------------------------- */
+
 body
 {
     font-family: 'Merriweather', serif;
 }
 
-img {
-  max-width: 100%;
+img
+{
+    max-width: 100%;
 }
 
 .wrapper
 {
-    max-width: 43.75rem;
+    max-width: 43.75rem; /* 700/16 */
     margin: 0 auto;
+    padding: 0 3rem;
+}
+
+@media (min-width: 60em)
+{
+    .wrapper
+    {
+        padding: 0;
+    }
 }
 
 .skiplink
@@ -58,6 +83,7 @@ nav
 nav ul
 {
     display: flex;
+    flex-direction: column;
 
     margin: 0;
     padding: 0 2rem 0 0;
@@ -66,6 +92,14 @@ nav ul
 
     justify-content: space-between;
     align-items: center;
+}
+
+@media (min-width: 60em)
+{
+    nav ul
+    {
+        flex-direction: row;
+    }
 }
 
 nav ul li:nth-child(1)
@@ -94,6 +128,7 @@ nav ul li a:hover
     margin-bottom: 3rem;
 }
 
+/* Inside `main`, everything that follows everything. */
 main * + *
 {
     margin-top: 1.5rem;
@@ -109,19 +144,23 @@ main p
     line-height: 1.5;
 }
 
-main a {
-  text-decoration: none;
-  text-shadow: 0.05em 0 0 #fff, -0.05em 0 0 #fff, 0 0.05em 0 #fff, 0 -0.05em 0 #fff, 0.1em 0 0 #fff, -0.1 0 0 #fff, 0 0.1 0 #fff, 0 -0.1em 0 #fff;
-  background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
-  background-repeat: repeat-x;
-  background-position: bottom 0.05em center;
-  background-size: 100% 0.05em;
+main a
+{
+    text-decoration: none;
+
+    background-image: linear-gradient(to right, currentColor 0%, currentColor 100%);
+    background-repeat: repeat-x;
+    background-position: bottom .05em center;
+    background-size: 100% .05em;
+    text-shadow: .05em 0 0 #fff, -.05em 0 0 #fff, 0 .05em 0 #fff, 0 -.05em 0 #fff, .1em 0 0 #fff, -.1 0 0 #fff, 0 .1 0 #fff, 0 -.1em 0 #fff;
 }
 
 main a:hover,
-main a:focus {
-  background-color: #cef;
+main a:focus
+{
+    background-color: #cef;
 }
+
 
 blockquote
 {
