@@ -2,7 +2,7 @@
 cd ${0%/*}
 
 echo "Downloading instructor materials"
-curl http://digm.drexel.edu/crs/IDM222/cdn/IDM222-W08.md -o ../instructor_materials/IDM222-W08.md
+curl http://digm.drexel.edu/crs/IDM222/cdn/WORKSHOP.md -o ../instructor_materials/WORKSHOP.md
 echo "Done"
 echo ""
 echo "Downloading image assets"
