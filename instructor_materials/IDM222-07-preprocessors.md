@@ -16,7 +16,7 @@ theme: Plain Jane, 2
 
 ---
 
-# Week 6
+# Week 7
 
 ## Preprocessors
 

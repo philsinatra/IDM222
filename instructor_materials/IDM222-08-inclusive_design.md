@@ -9,7 +9,8 @@ theme: Plain Jane, 2
 
 ---
 
-# Week 7
+# Week 8
+
 ## Inclusive Design Patterns
 
 ---
@@ -719,4 +720,4 @@ But browser vendors couldn't agree on a codec
 
 ## Responsive Web Design Workshop
 
-^ We will be working in teams under a time limit to develop a fluid, responsive design. Familiarize yourself with the HTML as much as possible in preparation for next week. (review `/examples/week8/index.html`)
+^ We will be working in teams under a time limit to develop a fluid, responsive design. Familiarize yourself with the HTML as much as possible in preparation for next week. (review `/examples/zen/index.html`)

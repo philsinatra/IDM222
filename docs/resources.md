@@ -2,13 +2,14 @@
 
 ## Lecture Slides
 
-- [Week 1](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-W01.pdf)
-- [Week 2](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-W02.pdf)
-- [Week 3](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-W03.pdf)
-- [Week 4](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-W04.pdf)
-- [Week 5](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-W05.pdf)
-- [Week 6](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-W06.pdf)
-- [Week 7](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-W07.pdf)
+- [01 Introduction](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-01-introduction.pdf)
+- [02 Fun With CSS](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-02-CSS.pdf)
+- [03 Responsive Web Design - Intro](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-03-RWD.pdf)
+- [04 Responsive Images](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-04-responsive_images.pdf)
+- [05 Flexbox](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-05-flexbox.pdf)
+- [06 CSS Grid](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-06-grid.pdf)
+- [07 Preprocessors](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-07-preprocessors.pdf)
+- [08 Inclusive Design Patterns](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-08-inclusive_design.pdf)
 
 ## Reading Material
 
@@ -34,9 +35,6 @@
 - [3D transforms](http://desandro.github.io/3dtransforms/)
 - [Mobile Meta](https://css-tricks.com/snippets/html/responsive-meta-tag/)
 - [Color Safe](http://colorsafe.co)
-
-### Flexbox
-
 - [Flexbox in the CSS specifications](http://www.w3.org/TR/css3-flexbox/)
 - [Flexbox at MDN](https://developer.mozilla.org/en-US/docs/CSS/Tutorials/Using_CSS_flexible_boxes)
 - [Flexbox at Opera](http://dev.opera.com/articles/view/flexbox-basics/)
@@ -44,6 +42,10 @@
 - [Mixing syntaxes for best browser support on CSS-Tricks](/using-flexbox/)
 - [Flexbox by Raphael Goetter (FR)](http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html)
 - [Flexbox Froggy](http://flexboxfroggy.com)
+- [Get Ready For CSS Grid](https://abookapart.com/products/get-ready-for-css-grid-layout)
+- [MDN CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Grid Garden](http://cssgridgarden.com)
 
 ## Git
 

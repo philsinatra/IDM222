@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+  justify-self: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3rem 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+  /* What happens if we rearrange the template areas? */
+
+  margin: 3rem auto;
+  max-width: 64rem;
+}
+
+/*
+header {
+  background-color: blue;
+}
+
+main {
+  background-color: yellow;
+}
+
+aside {
+  background-color: red;
+}
+
+footer {
+  background-color: green;
+}
+*/
+
+img { max-width: 100%; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 157px;
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+}
