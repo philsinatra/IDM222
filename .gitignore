@@ -52,6 +52,7 @@ Thumbs.db
 *.png
 *.gif
 *.webp
+/assignments
 build
 examples/week4/picture/images
 graphics

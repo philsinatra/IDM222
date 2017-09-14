@@ -255,9 +255,9 @@ theme: Plain Jane, 2
   grid-template-columns: 50px 50px 50px 50px;
   grid-template-rows: auto;
   grid-template-areas:
-    "header header header header"
-    "main main . sidebar"
-    "footer footer footer footer";
+    'header header header header'
+    'main main . sidebar'
+    'footer footer footer footer';
 }
 ```
 

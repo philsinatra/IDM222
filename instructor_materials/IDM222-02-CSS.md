@@ -230,7 +230,7 @@ h1 {
 
 ```css
 h1 {
-  animation: moveright 3s 2s infinite ease-in-out alternate;
+  animation: moveright 3s ease-in-out 2s infinite alternate;
 }
 
 @keyframes moveright {
