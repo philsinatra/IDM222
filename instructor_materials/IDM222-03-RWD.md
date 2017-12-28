@@ -294,8 +294,8 @@ Some of the common attributes used with this tag include:
 
 ```html
 <meta name="viewport"
-      content="initial-scale=1.0,
-      width=device-width" />
+      content="width=device-width,
+      initial-scale=1.0">
 ```
 
 ---
