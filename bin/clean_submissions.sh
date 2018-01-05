@@ -8,6 +8,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
   for i in `seq 1 5`;
   do
-    echo "[{}]" > ../assignments/data/assignment_submission_$i.json
+    # echo "[{}]" > ../assignments/data/assignment_submission_$i.json
+    echo "" > ../assignments/data/assignment_submission_$i.json
   done
 fi
