@@ -32,7 +32,7 @@ This assignment focuses on getting setup and preparing for your final project.
 
 Begin planning your final project by documenting and gathering/preparing assets. Suggested planning:
 
-- Create a [flowchart](http://digm.drexel.edu/crs/IDM/cdn/instructor_materials/images/02-flowchart.png) that outlines how the application will work.
+- Create a [flowchart](http://digm.drexel.edu/crs/IDM231/cdn/instructor_materials/images/02-flowchart.png) that outlines how the application will work.
 - Create a [wireframe](https://webdesign.tutsplus.com/articles/a-beginners-guide-to-wireframing--webdesign-7399) for your application screen(s).
 - Create a [style tile](http://styletil.es) for your project's visual styles.
 - Setup a local project folder for your application.
