@@ -133,9 +133,9 @@ a:hover {
 
 ## CSS Transforms
 
-_Transforms_ let your rotate, scale, skew and position HTML elements using CSS code.
+^ _Transforms_ let your rotate, scale, skew and position HTML elements using CSS code.
 
-When you combine transforms with transitions, you can create some interesting animations for your HTML elements.
+^ When you combine transforms with transitions, you can create some interesting animations for your HTML elements.
 
 ---
 
@@ -312,6 +312,8 @@ image {
 ```
 
 ^ There are various filters available. We'll look at a couple examples here. Research online to find a full list of available filters and the values that are accepted for each.
+
+^ (_week2/06-filters.html_)
 
 ---
 
