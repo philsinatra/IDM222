@@ -165,7 +165,7 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
 ---
 
-![](http://moveableonline.com/blog/assets/2013/12/mobile-fragmentation-revolultion.jpg)
+![](http://acurrie.me/wp-content/uploads/2014/08/opensignal-02-devices.png)
 
 ^ Today content on the web needs to be available on a never ending list of devices, systems across infinite locations under environmental conditions totally out of the developer's control. Not only are there more devices than one could ever have access to, other factors like location, connection speed, browser, feature support etc. all impact the user's experience online and ability to find the information they're looking for.
 
