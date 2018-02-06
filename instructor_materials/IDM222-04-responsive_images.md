@@ -31,13 +31,13 @@ theme: Plain Jane, 2
 
 ---
 
-![](images/two_col.png)
+![](http://digm.drexel.edu/crs/IDM222/presentations/images/two_col.png)
 
 ^ Here's the page layout, nothing fancy. This example is fine if the web page only contains two columns. We want to use a responsive grid-view to have more control over the web page.
 
 ---
 
-![](http://info.template-help.com/help/wp-content/uploads/2011/09/grid-960-2.jpg)
+![fit](http://pixelwhip.github.io/layout-design-patterns/img/ss-grid-system-2.jpg)
 
 ^ Many web pages are based on a grid-view, which means that the page is divided into columns. Using a grid-view is very helpful when designing web pages. It makes it easier to place elements on the page. A responsive grid-view often has 12 columns (but it can be any number), and has a total width of 100%, and will shrink and expand as you resize the browser window. So how do we setup a grid like this?
 
@@ -90,7 +90,7 @@ $$
 </div>
 ```
 
-^ Each row should be wrapped in a `<div>`. The number of columns inside a row should always add up to 12:
+^ Each row should be wrapped in a `<div>`. The number of columns inside a row should always add up to 12. You should remember these concepts from last term.
 
 ---
 
@@ -110,21 +110,21 @@ $$
 
 ![](http://i.giphy.com/Q9aBxHn9fTqKs.gif)
 
-^ Let's build this grid! (grid-fluid example)
+^ Let's build this grid! (_04-responsive\_images/01-grid-fluid/_)
 
 ---
 
 ### Fluid, Not Responsive
 
-^ This system is a great start, but what happens to our columns when we use a mobile device where we only have 300px of total width? 8% of 300px is only 24 pixels... a very small column. Remember last week we talked about media queries, which allow us to build different rule sets for our elements based on different conditions. What if we changed our grid system with media queries so it worked differently based on the available screen width... (grid-responsive example)
+^ This system is a great start, but what happens to our columns when we use a mobile device where we only have 300px of total width? 8% of 300px is only 24 pixels... a very small column. Remember last week we talked about media queries, which allow us to build different rule sets for our elements based on different conditions. What if we changed our grid system with media queries so it worked differently based on the available screen width... (_04-responsive\_images/02-grid-responsive/_)
 
 ---
 
 ![](http://i.giphy.com/sjDV6YTbw8tig.gif)
 
-^ If you're with me so far, we're in good shape. We have a flexible grid based layout at our disposal. But of course it's not so simple. Let's look at another example. (grid-images/text)
+^ If you're with me so far, we're in good shape. We have a flexible grid based layout at our disposal. But of course it's not so simple. Let's look at another example. (_04-responsive\_images/03-grid-images/text.html_)
 
-^ Everything in our example is working properly, the text is wrapping as the columns respond to the change in browser size. Text reflows effortlessly within a flexible container. The problem is that not all content is text. Let's see what happens when we drop an image into our fluid grid. (grid-images/img)
+^ Everything in our example is working properly, the text is wrapping as the columns respond to the change in browser size. Text reflows effortlessly within a flexible container. The problem is that not all content is text. Let's see what happens when we drop an image into our fluid grid. (_04-responsive\_images/03-grid-images/img.html_)
 
 ^ Our grid system isn't broken; the proportions of the columns is intact. But because the image is much wider than its container, the content is overflowing to column. There are no constraints applied to the image to make it aware of its flexible environment.
 
@@ -251,7 +251,7 @@ video {
       small.jpg  320w"
    src="small.jpg"
    alt="my image" />
-```   
+```
 
 ^ In this case we have three images. Were using `srcset` again, but instead of `x` descriptors, we are attaching `w` descriptors to our sources. These describe the actual width, in pixels, of the referenced file. So, if you "Save for Web..." at 1024 x 768 pixels, then mark up that source in the `srcset` as `1024w`. So, that's `w` in `srcset`, which describes how many pixels each of our sources _has_.[^1]
 
@@ -269,7 +269,7 @@ video {
       100vw"
    src="small.jpg"
    alt="my image" />
-```   
+```
 
 ^ Next, we add the `sizes` attribute, which Tells the browser how many pixels it _needs_ by describing the final rendered width of our image. Think of `sizes` as a way to give the browser a bit of information about the pages layout a little ahead of time, so that it can pick the source before it has parsed or rendered any of the pages CSS. We are passing the browser a CSS length that describes the images rendered width. Lengths can be absolute (pixels, ems), or relative to the viewport (vw).[^1]
 
@@ -287,7 +287,7 @@ video {
       100vw"
    src="small.jpg"
    alt="my image" />
-```   
+```
 
 ^ This example also includes a breakpoint at 36 ems. When the viewport is narrower than 36 ems, the layout changes. Below that breakpoint, the image will fit 100% of the viewports width. The browser goes over each media query until it finds one that matches and then uses the matching query's paired length. If no media queries match, then the browser uses a default length.[^1]
 
