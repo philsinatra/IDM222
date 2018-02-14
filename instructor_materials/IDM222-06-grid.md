@@ -26,7 +26,7 @@ theme: Plain Jane, 2
 
 ## Terminology
 
-^ Before diving into the concepts of Grid it's important to understand the terminology. Since the terms involved here are all kinda conceptually similar, it's easy to confuse them with one another if you don't first memorize their meanings defined by the Grid specification.
+^ Before diving into the concepts of Grid it's important to understand the terminology. Since the terms involved here are all conceptually similar, it's easy to confuse them with one another if you don't first memorize their meanings defined by the Grid specification.
 
 ---
 
@@ -983,6 +983,16 @@ theme: Plain Jane, 2
 ---
 
 ![fit](http://digm.drexel.edu/crs/IDM222/presentations/images/grid-justify_self-stretch.png)
+
+---
+
+# Let's Play
+
+[CSS Grid Garden](http://cssgridgarden.com)
+
+---
+
+# For next week...
 
 ---
 
