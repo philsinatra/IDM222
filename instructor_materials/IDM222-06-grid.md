@@ -795,7 +795,7 @@ theme: Plain Jane, 2
 .item-a {
   grid-column-start: 2;
   grid-column-end: five;
-  grid-row-start: row1-start
+  grid-row-start: row1-start;
   grid-row-end: 3
 }
 ```
@@ -812,7 +812,7 @@ theme: Plain Jane, 2
 .item-b {
   grid-column-start: 1;
   grid-column-end: span col4-start;
-  grid-row-start: 2
+  grid-row-start: 2;
   grid-row-end: span 2
 }
 ```
