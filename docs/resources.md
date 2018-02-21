@@ -42,9 +42,11 @@
 - [Mixing syntaxes for best browser support on CSS-Tricks](/using-flexbox/)
 - [Flexbox by Raphael Goetter (FR)](http://www.alsacreations.com/tuto/lire/1493-css3-flexbox-layout-module.html)
 - [Flexbox Froggy](http://flexboxfroggy.com)
+- [Basics of CSS Grid](https://www.youtube.com/watch?v=FEnRpy9Xfes&feature=youtu.be)
 - [Get Ready For CSS Grid](https://abookapart.com/products/get-ready-for-css-grid-layout)
 - [MDN CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Grid By Example](https://gridbyexample.com/video/)
 - [Grid Garden](http://cssgridgarden.com)
 
 ## Git
