@@ -1,63 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Transitions</title>
-  <style>
-  a {
-    color: blue;
-    transition: color 0.6s ease-in-out;
-  }
-  a:hover { color: red; }
+	<meta charset="UTF-8">
+	<title>Transitions</title>
+	<style>
+	a {
+		color: blue;
+		transition: color 0.6s ease-in-out;
+	}
 
-  button {
-    background-color: #5dd8f0;
-    border-radius: 0;
-    border: none;
-    color: #000;
-    cursor: pointer;
-    padding: 1rem;
-    transition: background-color 0.6s ease-in-out;
-  }
+	a:hover {
+		color: red;
+	}
 
-  button:hover,
-  button:active {
-    background-color: #d91622;
-  }
+	button {
+		background-color: #5dd8f0;
+		border-radius: 0;
+		border: none;
+		color: #000;
+		cursor: pointer;
+		padding: 1rem;
+		transition: background-color 0.6s ease-in-out;
+	}
 
-  #accordian div {
-    overflow: hidden;
-    height: 0;
-    transition: height 1s ease-in-out;
-  }
-  #accordian div:target {
-    height: 120px;
-  }
-  </style>
+	button:hover,
+	button:active {
+		background-color: #d91622;
+	}
+
+	#accordian div {
+		overflow: hidden;
+		height: 0;
+		transition: height 1s ease-in-out;
+	}
+
+	#accordian div:target {
+		height: 120px;
+	}
+
+	</style>
 </head>
+
 <body>
-  <h1>Transitions</h1>
+	<h1>Transitions</h1>
+	<p><a href="#">A link</a></p>
+	<p><button>A Button</button></p>
+	<h2>FAQs</h2>
+	<div id="accordian">
+		<!-- (h3>a[href="#Q$"]^div#Q$)*3 -->
+		<h3><a href="#Q1">Why is the floor wet Todd?</a></h3>
+		<div id="Q1">I dont' know Margo.</div>
 
-  <p><a href="#">A link</a></p>
+		<h3><a href="#Q2">Who ya gonna call?</a></h3>
+		<div id="Q2">The Ghostbusters.</div>
 
-  <p><button>A Button</button></p>
-
-
-  <h2>FAQs</h2>
-
-  <div id="accordian">
-
-    <!-- (h3>a[href="#Q$"]^div#Q$)*3 -->
-
-    <h3><a href="#Q1">Why is the floor wet Todd?</a></h3>
-    <div id="Q1">I dont' know Margo.</div>
-
-    <h3><a href="#Q2">Who ya gonna call?</a></h3>
-    <div id="Q2">The Ghostbusters.</div>
-
-    <h3><a href="#Q3">You want the truth?</a></h3>
-    <div id="Q3">You can't handle the truth.</div>
-
-  </div>
+		<h3><a href="#Q3">You want the truth?</a></h3>
+		<div id="Q3">You can't handle the truth.</div>
+	</div>
 </body>
+
 </html>

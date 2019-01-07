@@ -1,53 +1,53 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 p {
-  margin: 0;
+	margin: 0;
 }
 
 .grid {
-  margin: 2rem auto;
-  max-width: 64rem;
+	margin: 2rem auto;
+	max-width: 64rem;
 
-  display: grid;
+	display: grid;
 
-  /**
+	/**
    * First, setup the grid to have five total columns.
    * Also setup the size of the rows.
    */
-  /*grid-template-columns: 40px 50px auto 50px 40px;*/
-  grid-template-columns: 2.5rem 3.13rem auto 3.13rem 2.5rem;
-  grid-template-rows: 25% 100px auto;
+	/*grid-template-columns: 40px 50px auto 50px 40px;*/
+	grid-template-columns: 2.5rem 3.13rem auto 3.13rem 2.5rem;
+	grid-template-rows: 25% 100px auto;
 
-  /**
+	/**
    * Switch the grid up to three columns, each of equal width.
    * The width of each column should be one fraction of the available space.
    */
-  grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 
-  /* What happens if we add another `1fr`? */
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+	/* What happens if we add another `1fr`? */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 
-  /* What happens if we change the fractions? */
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-columns: 1fr 50px 1fr 1fr;
+	/* What happens if we change the fractions? */
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-columns: 1fr 50px 1fr 1fr;
 
-  /* Let's add gaps between the columns/rows */
-  grid-column-gap: 16px;
-  grid-row-gap: 32px;
+	/* Let's add gaps between the columns/rows */
+	grid-column-gap: 16px;
+	grid-row-gap: 32px;
 
-  /* Justify the content */
-  justify-items: start;
-  /*justify-items: end;*/
-  /*justify-items: center;*/
-  /* Show dev tools hover to show how the item stretches. */
-  /*justify-items: stretch;*/
+	/* Justify the content */
+	justify-items: start;
+	/*justify-items: end;*/
+	/*justify-items: center;*/
+	/* Show dev tools hover to show how the item stretches. */
+	/*justify-items: stretch;*/
 
-  /* Align the content */
-  align-items: start;
-  /*align-items: end;*/
-  /*align-items: center;*/
-  /* Show dev tools hover to show how the item stretches. */
-  /*align-items: stretch;*/
+	/* Align the content */
+	align-items: start;
+	/*align-items: end;*/
+	/*align-items: center;*/
+	/* Show dev tools hover to show how the item stretches. */
+	/*align-items: stretch;*/
 }

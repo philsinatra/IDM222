@@ -18,71 +18,78 @@ $cs_darkest:   #00527F
 */
 
 
-* { box-sizing: border-box; }
+* {
+	box-sizing: border-box;
+}
 
-html { font-size: 100%; }
+html {
+	font-size: 100%;
+}
 
 body {
-  background-color: #00527F;
-  font: 100%/1.4 Arial, sans-serif;
+	background-color: #00527F;
+	font: 100%/1.4 Arial, sans-serif;
 }
 
 header {
-  background-color: #0084CC;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+	background-color: #0084CC;
+	color: white;
+	padding: 1rem;
+	text-align: center;
 }
 
 .contain {
-  background-color: white;
-  margin: 1rem auto;
-  padding: 1rem;
-  width: 80%;
+	background-color: white;
+	margin: 1rem auto;
+	padding: 1rem;
+	width: 80%;
 }
 
 aside {
-  background-color: #4DC0FF;
-  padding: 1rem;
+	background-color: #4DC0FF;
+	padding: 1rem;
 }
 
 @media (min-width: 37.5rem) {
-  /* 600px */
-  .contain {
-    overflow: auto;
-    width: 100%;
-  }
 
-  header {
-    text-align: left;
-  }
+	/* 600px */
+	.contain {
+		overflow: auto;
+		width: 100%;
+	}
 
-  main, aside {
-    float: left;
-  }
+	header {
+		text-align: left;
+	}
 
-  main {
-    padding-right: 1rem;
-    width: 60%;
-  }
+	main,
+	aside {
+		float: left;
+	}
 
-  aside {
-    width: 40%;
-  }
+	main {
+		padding-right: 1rem;
+		width: 60%;
+	}
+
+	aside {
+		width: 40%;
+	}
 }
 
 @media (min-width: 56.25rem) {
-  /* 900px */
-  body {
-    background-color: #900;
-  }
 
-  header {
-    background-color: red;
-  }
+	/* 900px */
+	body {
+		background-color: #900;
+	}
 
-  main,
-  aside {
-    width: 50%;
-  }
+	header {
+		background-color: red;
+	}
+
+	main,
+	aside {
+		width: 50%;
+	}
 }

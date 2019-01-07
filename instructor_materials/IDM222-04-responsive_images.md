@@ -2,14 +2,10 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 2
+theme: Dark Mode
 
 # IDM 222
-## Web Design II
 
----
-
-# Week 4
 ## Responsive Web Design
 
 ^ Last week we discussed the fundamentals of responsive web design, including fluid layouts and media queries. This week we'll expand on those concepts, starting with the idea of a responsive grid system.
@@ -31,7 +27,7 @@ theme: Plain Jane, 2
 
 ---
 
-![](http://digm.drexel.edu/crs/IDM222/presentations/images/two_col.png)
+![two column layout](http://digm.drexel.edu/crs/IDM222/presentations/images/two_col.png)
 
 ^ Here's the page layout, nothing fancy. This example is fine if the web page only contains two columns. We want to use a responsive grid-view to have more control over the web page.
 
@@ -108,7 +104,7 @@ $$
 
 ### Build It
 
-![](http://i.giphy.com/Q9aBxHn9fTqKs.gif)
+![matrix](http://i.giphy.com/Q9aBxHn9fTqKs.gif)
 
 ^ Let's build this grid! (_04-responsive\_images/01-grid-fluid/_)
 
@@ -120,7 +116,7 @@ $$
 
 ---
 
-![](http://i.giphy.com/sjDV6YTbw8tig.gif)
+![wow gif](http://i.giphy.com/sjDV6YTbw8tig.gif)
 
 ^ If you're with me so far, we're in good shape. We have a flexible grid based layout at our disposal. But of course it's not so simple. Let's look at another example. (_04-responsive\_images/03-grid-images/text.html_)
 
@@ -136,7 +132,7 @@ $$
 
 ---
 
-## Compressive technique
+## Resize Technique
 
 ```css
 img {
@@ -150,7 +146,7 @@ img {
 
 ---
 
-## Compressive technique
+## Resize (more) Technique
 
 ```css
 img,
@@ -187,6 +183,7 @@ video {
 ^ Images have been a huge obstacle to implementing truly adaptable responsive pages. The latest specification of the `picture` element give us semantic ways to group multiple versions of the same image, each version having technical characteristics that make it more or less suitable for a particular user. Let's look at some of the ways browsing environments vary and how we want our images to adapt in these cases. [^1]
 
 [^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
+
 ---
 
 1. device-pixel-ratio
@@ -203,39 +200,25 @@ video {
 
 ## The `device-pixel-ratio` Use Case
 
-^ Let's start simply, with a fixed with image that we want to adapt to varying device pixel refuse.
-
----
-
-## The `device-pixel-ratio` Use Case
-
 ```html
 <img srcset="small.jpg 1x, large.jpg 2x"
   src="small.jpg"
   alt="my image">
 ```
+
+^ Let's start simply, with a fixed with image that we want to adapt to varying device pixel refuse.
 
 ^ To do this, will use the first tool that the new spec gives us for grouping and describing image sources: the `srcset` attribute. Say we have two versions of an image, we want to send large.jpg only do users with high resolution screens. Using `srcset` that, we markup or image like this:[^1]
 
-[^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
-
----
-
-## The `device-pixel-ratio` Use Case
-
-```html
-<img srcset="small.jpg 1x, large.jpg 2x"
-  src="small.jpg"
-  alt="my image">
-```
-
-^ The `srcset` attribute takes a comma separated list of image URLs, each with an `x` descriptor stating the _device-pixel-ratio_ that the file is intended for. The `src` is there for browsers that don't understand `srcset`.[^1]
+^ The `srcset` attribute takes a comma separated list of image URLs, each with an `x` descriptor stating the _device-pixel-ratio_ that the file is intended for. The `src` is there for browsers that don't understand `srcset`.[^2]
 
 [^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
 
+[^2]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
+
 ---
 
-## Fluid / Variable Sized<br>Images Use Case
+## Fluid / Variable Sized Images Use Case
 
 ^ That markup will not efficiently squish and stretch our image in a fluid layout. This technique allows us to tell the browser the rendered size of our image. Once we tell the browser how many pixels it needs and how many pixels each of our sources has, picking a source becomes trivial. The browser picks the smallest source that will still look reasonably crisp within its container.[^1]
 
@@ -243,7 +226,7 @@ video {
 
 ---
 
-## Fluid / Variable Sized Images Use Case
+## Fluid / Variable Sized Images Use Case Example
 
 ```html
 <img srcset="large.jpg  1024w,
@@ -259,7 +242,7 @@ video {
 
 ---
 
-## Fluid / Variable Sized Images Use Case
+## Fluid / Variable Sized Images Use Case (continued)
 
 ```html
 <img srcset="large.jpg  1024w,
@@ -277,7 +260,7 @@ video {
 
 ---
 
-## Fluid / Variable Sized Images Use Case
+## Fluid / Variable Sized Images Use Case - Breakpoint
 
 ```html
 <img srcset="large.jpg  1024w,
@@ -290,14 +273,6 @@ video {
 ```
 
 ^ This example also includes a breakpoint at 36 ems. When the viewport is narrower than 36 ems, the layout changes. Below that breakpoint, the image will fit 100% of the viewports width. The browser goes over each media query until it finds one that matches and then uses the matching query's paired length. If no media queries match, then the browser uses a default length.[^1]
-
-[^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
-
----
-
-## Art-Direction Use Case
-
-^ What if we want to go further, adapt more? What if we want to crop the image, or zoom to a certain important part of the image, or add space for text on the side of the image. These variables would change based on the available size and layout of our page (iPad example?) This is considered art-direction.[^1]
 
 [^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
 
@@ -318,20 +293,31 @@ video {
 </picture>
 ```
 
-^ Let's go back to our previous example. Suppose that instead of letting our image fill the full width of the viewport on small screens, we crop the image square, zoom in on the most important part of the subject, and present that small square crop at a fixed size floated to the left, leaving a lot of space for descriptive text.[^1]
+^ What if we want to go further, adapt more? What if we want to crop the image, or zoom to a certain important part of the image, or add space for text on the side of the image. These variables would change based on the available size and layout of our page (iPad example?) This is considered art-direction.[^1]
+
+^ Let's go back to our previous example. Suppose that instead of letting our image fill the full width of the viewport on small screens, we crop the image square, zoom in on the most important part of the subject, and present that small square crop at a fixed size floated to the left, leaving a lot of space for descriptive text.[^2]
 
 [^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
 
+[^2]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
+
 ---
 
-### Art-Direction Use Case - Break Down
+[.code-highlight: 2-6]
+
+### Art-Direction Use Case - Source 1
 
 ```html
-<source media="(min-width: 36em)"
-   srcset="large.jpg  1024w,
-      medium.jpg 640w,
-      small.jpg  320w"
-   sizes="33.3vw" />
+<picture>
+  <source media="(min-width: 36em)"
+     srcset="large.jpg  1024w,
+        medium.jpg 640w,
+        small.jpg  320w"
+     sizes="33.3vw" />
+  <source srcset="cropped-large.jpg 2x,
+        cropped-small.jpg 1x" />
+  <img src="small.jpg" alt="my image" />
+</picture>
 ```
 
 ^ Let's break this down. This `source` represents the full uncropped version of our image. We want to show the full image only when the viewport is wider than 36 ems. The first attribute here, `media="(min-width: 36em)"`, makes that happen. If a query in a `media` attribute evaluates to `true`, then the browser must use that `source`, otherwise it's skipped. the other two attributes, `srcset` and `sizes` are copied from our previous example. [^1]
@@ -340,11 +326,21 @@ video {
 
 ---
 
-### Art-Direction Use Case - Break Down
+[.code-highlight: 7-8]
+
+### Art-Direction Use Case - Source 2
 
 ```html
-<source srcset="cropped-large.jpg 2x,
-      cropped-small.jpg 1x" />
+<picture>
+  <source media="(min-width: 36em)"
+     srcset="large.jpg  1024w,
+        medium.jpg 640w,
+        small.jpg  320w"
+     sizes="33.3vw" />
+  <source srcset="cropped-large.jpg 2x,
+        cropped-small.jpg 1x" />
+  <img src="small.jpg" alt="my image" />
+</picture>
 ```
 
 ^ When the viewport is narrower than 36 ems, the first `source`'s media query will evaluate to `false`, and we proceed to the second. This represents our small square cropped version, displayed at a fixed width. We still want it to render crisply on high-resolution screens, so we supply both a 1x and 2x version and mark them up with simple `x` descriptors.[^1]
@@ -353,21 +349,26 @@ video {
 
 ---
 
-### Art-Direction Use Case - Break Down
+[.code-highlight: 9]
+
+### Art-Direction Use Case - `img` Tag
 
 ```html
-<img src="small.jpg" alt="my image" />
+<picture>
+  <source media="(min-width: 36em)"
+     srcset="large.jpg  1024w,
+        medium.jpg 640w,
+        small.jpg  320w"
+     sizes="33.3vw" />
+  <source srcset="cropped-large.jpg 2x,
+        cropped-small.jpg 1x" />
+  <img src="small.jpg" alt="my image" />
+</picture>
 ```
 
 ^ Lastly is the `img`, which is required. Without `img`, there's no image; `picture` and all of its `source`'s are there to feed the `img` a `src`. `picture` itself is invisible. Its `source`'s are there for the browser to draw alternate versions of the image from. Once a source URL is chosen, that URL is fed to the `img`.[^1]
 
 [^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
-
----
-
-## The Type-Switching Use Case
-
-^ The Type-Switching use case is great if we want to give a new file format a spin, and provide a fallback for non-supporting browsers.
 
 ---
 
@@ -381,24 +382,25 @@ video {
 </picture>
 ```
 
+^ The Type-Switching use case is great if we want to give a new file format a spin, and provide a fallback for non-supporting browsers.
+
 ^ If the browser doesn't understand the `image/svg` media type, it skips the first `source`; if it can't figure out `image/png`, it falls back to `img` and the GIF file.[^1]
 
 [^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
 
 ---
 
-## Great...
-### Can I Use It?
+## Can I Use It
 
 [picture](http://caniuse.com/#search=picture)
 [srcset](http://caniuse.com/#search=srcset)
 
 ---
 
-![](http://i.giphy.com/d2lcHJTG5Tscg.gif)
+![crying man](http://i.giphy.com/d2lcHJTG5Tscg.gif)
 
 ^ Let's do an example.
 
 ---
 
-# For Next Week...
+# For Next Week

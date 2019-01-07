@@ -1,21 +1,22 @@
 .contain {
-  overflow: auto;
-  width: 100%;
+	overflow: auto;
+	width: 100%;
 }
 
 header {
-  text-align: left;
+	text-align: left;
 }
 
-main, aside {
-  float: left;
+main,
+aside {
+	float: left;
 }
 
 main {
-  padding-right: 1rem;
-  width: 60%;
+	padding-right: 1rem;
+	width: 60%;
 }
 
 aside {
-  width: 40%;
+	width: 40%;
 }

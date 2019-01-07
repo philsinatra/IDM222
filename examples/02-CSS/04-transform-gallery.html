@@ -1,76 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Transforms</title>
-  <style>
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0 auto;
-  }
-  li {
-    display: block;
-    padding: 3rem;
-  }
-  .image1 { transform: matrix(0.5, 0.5, -0.5, 1, 0, 0); }
-  .image2 { transform: rotate(20deg); }
-  .image3 { transform: scaleX(1.4); }
-  .image4 { transform: scaleY(1.4); }
-  .image5 { transform: skewX(-20deg); }
-  .image6 { transform: skewY(-20deg); }
-  .image7 { transform: translateX(30px); }
-  .image8 { transform: translateY(20px); }
+	<meta charset="UTF-8">
+	<title>Transforms</title>
+	<style>
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin: 0 auto;
+	}
+
+	li {
+		display: block;
+		padding: 3rem;
+	}
+
+	.image1 {
+		transform: matrix(0.5, 0.5, -0.5, 1, 0, 0);
+	}
+
+	.image2 {
+		transform: rotate(20deg);
+	}
+
+	.image3 {
+		transform: scaleX(1.4);
+	}
+
+	.image4 {
+		transform: scaleY(1.4);
+	}
+
+	.image5 {
+		transform: skewX(-20deg);
+	}
+
+	.image6 {
+		transform: skewY(-20deg);
+	}
+
+	.image7 {
+		transform: translateX(30px);
+	}
+
+	.image8 {
+		transform: translateY(20px);
+	}
 
 
-  div {
-    height: 100vh;
-    padding: 32px;
-    position: relative;
-    text-align: center;
-  }
+	div {
+		height: 100vh;
+		padding: 32px;
+		position: relative;
+		text-align: center;
+	}
 
-  .gray { background-color: gray; }
+	.gray {
+		background-color: gray;
+	}
 
-  .polaroid {
-    bottom: 0;
-    height: 320px;
-    left: 0;
-    margin: auto;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: all 1s ease-in-out;
-    width: 320px;
-  }
-  .polaroid:hover {
-    border: 20px solid white;
-    border-bottom-width: 60px;
-    box-shadow: 10px 10px 15px rgba(0,0,0,0.6);
-    height: 640px;
-    transform: rotate(20deg);
-    width: 640px;
-  }
-  </style>
+	.polaroid {
+		bottom: 0;
+		height: 320px;
+		left: 0;
+		margin: auto;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all 1s ease-in-out;
+		width: 320px;
+	}
+
+	.polaroid:hover {
+		border: 20px solid white;
+		border-bottom-width: 60px;
+		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.6);
+		height: 640px;
+		transform: rotate(20deg);
+		width: 640px;
+	}
+
+	</style>
 </head>
-<body>
-<div>
-  <ul>
-    <!-- li*8>img[src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg"][class="image$"] -->
-    <li><p>Matrix</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image1"></li>
-    <li><p>Rotate</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image2"></li>
-    <li><p>ScaleX</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image3"></li>
-    <li><p>ScaleY</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image4"></li>
-    <li><p>SkewX</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image5"></li>
-    <li><p>SkewY</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image6"></li>
-    <li><p>TranslateX</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image7"></li>
-    <li><p>TranslateY</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image8"></li>
-  </ul>
-</div>
 
-  <div class="gray">
-    <img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="polaroid">
+<body>
+	<div>
+		<ul>
+			<!-- li*8>img[src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg"][class="image$"] -->
+			<li>
+				<p>Matrix</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image1"></li>
+			<li>
+				<p>Rotate</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image2"></li>
+			<li>
+				<p>ScaleX</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image3"></li>
+			<li>
+				<p>ScaleY</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image4"></li>
+			<li>
+				<p>SkewX</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image5"></li>
+			<li>
+				<p>SkewY</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image6"></li>
+			<li>
+				<p>TranslateX</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image7"></li>
+			<li>
+				<p>TranslateY</p><img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="image8"></li>
+		</ul>
+	</div>
+
+	<div class="gray">
+		<img src="http://cdn.philsinatra.com/libraries/images/italy-001.jpg" class="polaroid">
   </div>
 </body>
+
 </html>

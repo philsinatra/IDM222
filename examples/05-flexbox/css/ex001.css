@@ -1,29 +1,28 @@
-*
-{
-    box-sizing: border-box;
+* {
+	box-sizing: border-box;
 }
-html
-{
-    font-size: 100%;
-}
-.parent
-{
-    display: flex;
 
-    height: 100vh;
-
-    background-color: #bd10e0;
+html {
+	font-size: 100%;
 }
-.child
-{
-    width: 12.5rem;
-    height: 12.5rem;
-    /*
+
+.parent {
+	display: flex;
+
+	height: 100vh;
+
+	background-color: #bd10e0;
+}
+
+.child {
+	width: 12.5rem;
+	height: 12.5rem;
+	/*
     Just as we've used margin-left|right: auto in the past for horizontal alignment,
     with flexbox we can have the browser calculate margins on all four sides for absolute centering.
     This relies on the fact a margin set to `auto` in a flex container absorb extra space. So setting a vertical margin of auto will make the item perfectly centered in both axis.
     */
-    margin: auto;
+	margin: auto;
 
-    background-color: #f5a623;
+	background-color: #f5a623;
 }

@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-  <title>CSS Responsive Grid</title>
-  <link rel="stylesheet" href="../02-grid-responsive/screen.css">
-  <!-- DO NOT INCLUDE -->
-  <style>
-  img { max-width: 100%; }
-  </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<title>CSS Responsive Grid</title>
+	<link rel="stylesheet" href="../02-grid-responsive/screen.css">
+	<!-- DO NOT INCLUDE -->
+	<style>
+	img {
+		max-width: 100%;
+	}
+
+	</style>
 </head>
+
 <body>
-  <!--
+	<!--
   Our grid system isn't broken; the proportions of the columns is intact. But because the image is much wider than its container, the content is overflowing to column. There are no constraints applied to the image to make it aware of its flexible environment.
   -->
-  <div class="row">
-    <div class="col-3">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+	<div class="row">
+		<div class="col-3">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+		</div>
+		<div class="col-3">
+			<img src="http://placehold.it/800x600" alt="placeholder image">
     </div>
-    <div class="col-3">
-      <img src="http://placehold.it/800x600" alt="placeholder image">
-    </div>
-    <div class="col-3">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-    <div class="col-3">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-    <div class="col-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-    <div class="col-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-3">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-    <div class="col-9">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-    <div class="col-8">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
-    </div>
-  </div>
+			<div class="col-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+			<div class="col-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+			<div class="col-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+			<div class="col-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+			<div class="col-9">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+			<div class="col-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et erat orci. Etiam in dolor at arcu scelerisque aliquet. Quisque lorem diam, volutpat in elementum non, facilisis vel ipsum. Fusce ut posuere neque. Vestibulum egestas, odio a.</p>
+			</div>
+		</div>
 </body>
+
 </html>

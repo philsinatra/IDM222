@@ -2,14 +2,12 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 2
+theme: Dark Mode
 
 # IDM 222
-## Web Design II
 
 ---
 
-# Week 2
 ## CSS Fun
 
 ![right](https://webdesignledger.com/wp-content/uploads/2015/11/Singing-Octo-by-Fede-Cook.gif)
@@ -31,7 +29,7 @@ theme: Plain Jane, 2
 
 ---
 
-## CSS Transitions
+## CSS Transition Properties
 
     transition                  shorthand
     transition-property         property(s) used
@@ -43,9 +41,9 @@ theme: Plain Jane, 2
 
 ---
 
-## The Syntax
+## Transition Syntax
 
-```
+```css
 transition: [property] [duration] [timing-function] [delay];
 ```
 
@@ -66,12 +64,20 @@ a:hover {
 
 ---
 
-## The Syntax
+[.code-highlight: 4-5]
+
+## Transition Syntax Example
 
 ```css
 a {
+  color: blue;
+  font-size: 100%;
   transition: color 2s ease-in 1s,
               font-size 2s ease-out 1s;
+}
+a:hover {
+  color: red;
+  font-size: 120%;
 }
 ```
 
@@ -79,7 +85,9 @@ a {
 
 ---
 
-## The Syntax
+[.code-highlight: 7-10]
+
+## Transition Syntax Example Continued
 
 ```css
 a {
@@ -96,28 +104,17 @@ a:hover {
 
 ^ The rule set is followed by one for the hover pseudo-class for the `a` element.
 
----
-
-## The Syntax
-
-```css
-a:hover {
-  color: red;
-  font-size: 120%;
-}
-```
-
 ^ It changes the color to red, and the font-size to 120%. This means when the user hovers the mouse over the anchor element, the two values in the transition are changed. As a result, the transition takes place. When the user stops hovering, the transition returns to the original state.
 
 ---
 
-![](http://i.imgur.com/4jeBvb8.gif)
+![Yoda](http://i.imgur.com/4jeBvb8.gif)
 
-^ Let's test this in a browser. (_week2/01-transitions.html_)
+^ Let's test this in a browser. (_02/01-transitions.html_)
 
 ---
 
-## Great...
+## Great, Can I Use Transitions
 
 [Can I Use It?](http://caniuse.com#feat=css-transitions)
 
@@ -127,7 +124,7 @@ a:hover {
 
 ## Practical Application
 
-^ Adding transitions is a great way to give your content more personality and provide the user a more enjoyable experience. Transitions can also help with functionality, and provide a simpler, faster method of programming. Let's look at another example. (_week2/02-transitions-accordian.html_)
+^ Adding transitions is a great way to give your content more personality and provide the user a more enjoyable experience. Transitions can also help with functionality, and provide a simpler, faster method of programming. Let's look at another example. (_02/02-transitions-accordian.html_)
 
 ---
 
@@ -148,7 +145,7 @@ a:hover {
 
 ---
 
-## 2D Transforms
+## 2D Transform Example
 
 ```html
 <p>
@@ -165,7 +162,7 @@ a:hover {
 }
 ```
 
-^ In this example, there are two copies of the same image displayed side by side. Then, when the user hovers the mouse over the image on the right, it is rotated 180 degrees. As a result, it looks like a mirror image of the image on the left. (_week2/03-transform.html_)
+^ In this example, there are two copies of the same image displayed side by side. Then, when the user hovers the mouse over the image on the right, it is rotated 180 degrees. As a result, it looks like a mirror image of the image on the left. (_02/03-transform.html_)
 
 ---
 
@@ -173,7 +170,7 @@ a:hover {
 
 ![fit](http://www.lovethisgif.com/uploaded_images/61540-Girl_shaking_science_experiment.gif)
 
-^ The best way to understand what these transforms can do is to experiment. Let's look at some more examples of 2D transformations. (**open** _week2/04-transform-gallery.html_)
+^ The best way to understand what these transforms can do is to experiment. Let's look at some more examples of 2D transformations. (**open** _02/04-transform-gallery.html_)
 
 ---
 
@@ -183,7 +180,7 @@ a:hover {
 
 ---
 
-## Great...
+## Great, Can I Use 3D Transforms
 
 [Can I Use It?](http://caniuse.com/#feat=transforms3d)
 
@@ -191,13 +188,13 @@ a:hover {
 
 ## CSS Animations
 
-![](https://0bf196087c14ed19d1f11cf1-ambercreativelab.netdna-ssl.com/wp-content/uploads/2014/12/animated-headline-effect-preview.gif)
+![CSS animation example](https://images.thoughtbot.com/blog+animations/animation-direction.gif)
 
 ^ CSS3 _animations_ let you create frame-based animations that are similar to what you might create with a program like Flash. They can be simple or complex and can animate more than one CSS property at the same time.
 
 ---
 
-## CSS Animations
+## CSS Animation Properties
 
     animation                 shorthand
     animation-name            name of the @keframes rule
@@ -211,7 +208,7 @@ a:hover {
 
 ---
 
-## CSS Animations
+## CSS Animation Shorthand Syntax
 
 ```css
 h1 {
@@ -262,11 +259,11 @@ h1 {
 }
 ```
 
-^ The _@keyframes_ selector rule illustrates one way that the keyframes can be defined. You use the _from_ group to set the properties for the first frame and the _to_ group to set the properties for the last frame. The browser fills in the "in-between" frames for you. This is known as _tweening_. Let's build our example. (_week2/05-animation-fade.html_)
+^ The _@keyframes_ selector rule illustrates one way that the keyframes can be defined. You use the _from_ group to set the properties for the first frame and the _to_ group to set the properties for the last frame. The browser fills in the "in-between" frames for you. This is known as _tweening_. Let's build our example. (_02/05-animation-fade.html_)
 
 ---
 
-## CSS Animations
+## CSS Animation Keyframes
 
 ```css
 @keyframes myAnimation {
@@ -276,13 +273,12 @@ h1 {
 }
 ```
 
-^ For a finer level of control, your _keyframes_ can be setup using various percentage points. Let's build another example. (_week2/06-animation.html_)
+^ For a finer level of control, your _keyframes_ can be setup using various percentage points. Let's build another example. (_02/06-animation.html_)
 
 ---
 
 ## CSS Animation Examples
 
-- [EP Visual](http://epvisual.com)
 - [Solar System](http://codepen.io/juliangarnier/full/idhuG/)
 - [Periodic Table](http://threejs.org/examples/css3d_periodictable.html)
 - [Cat](http://roxik.com/cat/)
@@ -291,7 +287,7 @@ h1 {
 
 ---
 
-## Great...
+## Great. Can I Use CSS Animations
 
 [Can I Use It?](http://caniuse.com/#feat=css-animation)
 
@@ -303,7 +299,7 @@ h1 {
 
 ---
 
-## CSS Filters
+## CSS Filters Syntax
 
 ```css
 image {
@@ -313,17 +309,17 @@ image {
 
 ^ There are various filters available. We'll look at a couple examples here. Research online to find a full list of available filters and the values that are accepted for each.
 
-^ (_week2/06-filters.html_)
+^ (_02/06-filters.html_)
 
 ---
 
-## Great...
+## Great. Can I Use CSS Filters
 
 [Can I Use It?](http://caniuse.com/#search=filter)
 
 ---
 
-![](https://media.tenor.co/images/6e45c3c6678d1dbe5a92880a7d63bae4/raw)
+![jonah hill](https://media.tenor.co/images/6e45c3c6678d1dbe5a92880a7d63bae4/raw)
 
 ^ Phew!
 
@@ -331,7 +327,7 @@ image {
 
 ## Master Your Editor
 
-![](https://cdn-images-1.medium.com/max/2000/1*9qGFK0jjigADvy4BF_PZ_A.jpeg)
+![text editor](https://cdn-images-1.medium.com/max/2000/1*9qGFK0jjigADvy4BF_PZ_A.jpeg)
 
 ^ A big part of web development is workflow. Knowing how to code is critical; but also know how to code quickly, accurately, consistently and in a fashion where your code is readable, reliable and re-useable all make you a more valuable developer. You need to be a master of your code, and a master of the tools you use to create your code. Knowing your editor inside and out will let you focus more on the code and less on writing it.
 
@@ -339,7 +335,7 @@ image {
 
 ---
 
-## Master Your Editor
+## Command Panel & Fuzzy Finder
 
 - Project navigator: `CMD + P`
 - Command panel: `CMD + SHIFT + P`
@@ -366,7 +362,7 @@ image {
 
 ### Master Your Editor: Packages
 
-![](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/07/1404716305packagemgr.png)
+![Sublime Text Package Manager](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/07/1404716305packagemgr.png)
 
 ---
 
@@ -378,7 +374,7 @@ image {
 - [CSSComb](http://csscomb.com)
 - [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
 - [CanIUse](http://timkl.xyz/sublime-text-caniuse/)
-- [NestedComments](https://packagecontrol.io/packages/HTML%20Nest%20Comments)
+- [NestedComments](http://philsinatra.com/nest-comments.html)
 
 ---
 
@@ -391,4 +387,4 @@ image {
 
 ---
 
-## For next week...
+## For next week

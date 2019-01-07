@@ -72,6 +72,7 @@
 
 ## Software
 
+- [Visual Studio Code](https://code.visualstudio.com)
 - [Sublime Text](https://www.sublimetext.com)
 - [Atom](https://atom.io)
 - [Transmit](https://panic.com/transmit/)
@@ -79,14 +80,3 @@
 - [Cyberduck](https://cyberduck.io)
 - [Drexel Software](https://software.drexel.edu)
 - [SourceSetr](http://philsinatra.com/sourcesetr.html)
-
-## Sublime Text
-
-- [Package Control](https://packagecontrol.io)
-- [Emmet](http://emmet.io)
-- [HTML5](https://packagecontrol.io/packages/HTML5)
-- [CSSComb](http://csscomb.com)
-- [SublimeLinter](https://packagecontrol.io/packages/SublimeLinter)
-- [CanIUse](http://timkl.xyz/sublime-text-caniuse/)
-- [NestedComments](https://packagecontrol.io/packages/HTML%20Nest%20Comments)
-- [PasteRepeater](https://packagecontrol.io/packages/PasteRepeater)

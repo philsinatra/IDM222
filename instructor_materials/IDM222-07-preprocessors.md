@@ -2,21 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 2
+theme: Dark Mode
 
 # IDM 222
-
-## Web Design II
-
----
-
-## PSA: Web Hosting
-
-^ Public service announcement. Anyone who cancelled their Bluehost hosting plan and is now using _github.io_ Github's built in hosting - you will not be able to do so next term for IDM232 Scripting II. If you need the Drexel affiliate link to sign up for a new account at the discounted rate send me an email.
-
----
-
-# Week 7
 
 ## Preprocessors
 
@@ -95,8 +83,8 @@ body.home .media-unit .right h1 {
 
 ```scss
 #main
-  color: blue
-  font-size: 0.3em
+  color: blue;
+  font-size: 0.3em;
 ```
 
 ^ The original versions of Sass looked very different from regular CSS; there were no curly braces, and properties had to be indented with a specific number of spaces or else the compiler would raise an error. Because Sass’ indented syntax wasn’t compatible with regular CSS, it was difficult for people with large existing websites to start taking advantage of it without spending time converting their old code to Sass.
@@ -261,7 +249,7 @@ body.home {
 
 ---
 
-## Nesting
+## Nesting Styles
 
 ```scss
 .container {
@@ -306,7 +294,7 @@ $variable_name: "value";
 
 ---
 
-## Variables
+## Variables Example
 
 ```css
 button {
@@ -324,7 +312,7 @@ div {
 
 ---
 
-## Variables
+## Using Variables
 
 ```scss
 $branding-green: "#99cc00";
@@ -339,7 +327,7 @@ a {
 
 ---
 
-## Variables
+## Variables For Any Property
 
 ```scss
 $sans-serif-font: 'ff-dagny-web-pro', 'Helvetica Neue', Arial, sans-serif;
@@ -375,7 +363,7 @@ $highlight-color: #ffa;
 
 ---
 
-## Mixins
+## Including Mixins
 
 ```scss
 .result-with-highlights {
@@ -393,7 +381,7 @@ $highlight-color: #ffa;
 
 ---
 
-## Mixins
+## Defining Mixins
 
 ```scss
 @mixin transition($args) {
@@ -419,22 +407,22 @@ a {
 
 ---
 
-## Mixins
+## Mixins With Nested Rules
 
 ```scss
 $color: #99cc00;
 
 @mixin button {
-	background-color: $color;
-	border: 1px solid mix(black, $color, 25%);
-	border-radius: 5px;
-	padding: .25em .5em;
+  background-color: $color;
+  border: 1px solid mix(black, $color, 25%);
+  border-radius: 5px;
+  padding: .25em .5em;
 
-	&:hover {
-		cursor: pointer;
-		background-color: mix(black, $color, 15%);
-		border-color: mix(black, $color, 40%);
-	}
+  &:hover {
+    cursor: pointer;
+    background-color: mix(black, $color, 15%);
+    border-color: mix(black, $color, 40%);
+  }
 }
 ```
 
@@ -442,7 +430,7 @@ $color: #99cc00;
 
 ---
 
-## Arguments
+## Mixin Arguments
 
 ```scss
 @mixin headline ($color, $size) {
@@ -503,7 +491,7 @@ h1 {
 
 ---
 
-## Arguments
+## Variables as Arguments
 
 ```scss
 $base-color: pink;
@@ -520,7 +508,7 @@ h1 { @include headline($base-color, 12px);}
 
 ---
 
-## Arguments (compiled CSS)
+## Variables as Arguments (compiled CSS)
 
 ```css
 h1 {
@@ -662,7 +650,7 @@ aside {
 
 ---
 
-## For Next Week...
+## For Next Week
 
 ^ Work on your projects. No specific assignment to turn in.
 

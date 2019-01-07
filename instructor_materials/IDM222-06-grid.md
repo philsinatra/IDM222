@@ -2,15 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 2
+theme: Dark Mode
 
 # IDM 222
-
-## Web Design II
-
----
-
-# Week 6
 
 ## CSS Grid
 
@@ -18,7 +12,7 @@ theme: Plain Jane, 2
 
 ---
 
-## [Can I Use It?](http://caniuse.com/#feat=css-grid)
+## [Can I Use It](http://caniuse.com/#feat=css-grid)
 
 ^ Grid is one of the most powerful CSS modules ever introduced. As of March 2017, Grid is available in Chrome, Firefox, Safari and iOS Safari. Internet Explorer 10 and 11 on the other hand support it, but it's an old implementation with an outdated syntax. We'll need to use some vendor prefixes to get it working properly.
 
@@ -50,7 +44,7 @@ theme: Plain Jane, 2
 <div class="container">
   <div class="item"></div>
   <div class="item">
-  	<p class="sub-item"></p>
+    <p class="sub-item"></p>
   </div>
   <div class="item"></div>
 </div>
@@ -133,13 +127,13 @@ theme: Plain Jane, 2
 
 ^ Values:
 
-^ <track-size> - can be a length, a percentage, or a fraction of the free space in the grid (using the `fr` unit)
+^ `<track-size>` - can be a length, a percentage, or a fraction of the free space in the grid (using the `fr` unit)
 
-^ <line-name> - an arbitrary name of your choosing
+^ `<line-name>` - an arbitrary name of your choosing
 
 ---
 
-#### Examples:
+#### Grid Template Columns|Rows Examples
 
 ```css
 .container{
@@ -156,7 +150,7 @@ theme: Plain Jane, 2
 
 ---
 
-#### Examples
+#### Grid Template Columns|Rows Examples (continued)
 
 ```css
 .container {
@@ -173,7 +167,7 @@ theme: Plain Jane, 2
 
 ---
 
-#### Examples
+#### Naming Rows
 
 ```css
 .container{
@@ -183,7 +177,7 @@ theme: Plain Jane, 2
 
 ---
 
-#### Examples
+#### Fraction Unit
 
 ```css
 .container {
@@ -195,7 +189,7 @@ theme: Plain Jane, 2
 
 ---
 
-#### Examples
+#### Distributed Space
 
 ```css
 .container {
@@ -221,7 +215,7 @@ theme: Plain Jane, 2
 
 ^ Values:
 
-^ <grid-area-name> - the name of a grid area specified with grid-area
+^ `<grid-area-name>` - the name of a grid area specified with grid-area
 
 ^ `.` - a period signifies an empty grid cell
 
@@ -229,7 +223,7 @@ theme: Plain Jane, 2
 
 ---
 
-### Example
+### Grid Template Areas Example
 
 ```css
 .item-a {
@@ -248,7 +242,7 @@ theme: Plain Jane, 2
 
 ---
 
-### Example
+### Grid Template Areas Example (continued)
 
 ```css
 .container {
@@ -284,11 +278,11 @@ theme: Plain Jane, 2
 
 ^ Values:
 
-^ <line-size> - a length value
+^ `<line-size>` - a length value
 
 ---
 
-### Example
+### Grid Column|Row Gap Example
 
 ```css
 .container {
@@ -319,11 +313,11 @@ theme: Plain Jane, 2
 
 ^ Values:
 
-^ <grid-row-gap> <grid-column-gap> - length values
+^ `<grid-row-gap>` `<grid-column-gap>` - length values
 
 ---
 
-### Example
+### Grid Gap Example
 
 ```css
 .container{
@@ -359,7 +353,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Start
+## Example - `justify-items` Start
 
 ```css
 .container {
@@ -373,7 +367,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - End
+## Example - `justify-items` End
 
 ```css
 .container{
@@ -387,7 +381,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Center
+## Example - `justify-items` Center
 
 ```css
 .container{
@@ -401,7 +395,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Stretch
+## Example - `justify-items` Stretch
 
 ```css
 .container{
@@ -439,7 +433,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Start
+## Example - `align-items` Start
 
 ```css
 .container {
@@ -453,7 +447,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - End
+## Example - `align-items` End
 
 ```css
 .container {
@@ -467,7 +461,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Center
+## Example - `align-items` Center
 
 ```css
 .container {
@@ -481,7 +475,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Stretch
+## Example - `align-items` Stretch
 
 ```css
 .container {
@@ -531,7 +525,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Start
+## Example - `justify-content` Start
 
 ```css
 .container {
@@ -545,7 +539,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - End
+## Example - `justify-content` End
 
 ```css
 .container {
@@ -559,7 +553,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Center
+## Example - `justify-content` Center
 
 ```css
 .container {
@@ -573,7 +567,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Stretch
+## Example - `justify-content` Stretch
 
 ```css
 .container {
@@ -587,7 +581,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Space Around
+## Example - `justify-content` Space Around
 
 ```css
 .container {
@@ -601,7 +595,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Space Between
+## Example - `justify-content` Space Between
 
 ```css
 .container {
@@ -615,7 +609,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Space Evenly
+## Example - `justify-content` Space Evenly
 
 ```css
 .container {
@@ -647,23 +641,23 @@ theme: Plain Jane, 2
 
 ^ Values:
 
-^ start - aligns the grid to the top of the grid container
+^ **start** - aligns the grid to the top of the grid container
 
-^ end - aligns the grid to the bottom of the grid container
+^ **end** - aligns the grid to the bottom of the grid container
 
-^ center - aligns the grid in the center of the grid container
+^ **center** - aligns the grid in the center of the grid container
 
-^ stretch - resizes the grid items to allow the grid to fill the full height of the grid container
+^ **stretch** - resizes the grid items to allow the grid to fill the full height of the grid container
 
-^ space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
+^ **space-around** - places an even amount of space between each grid item, with half-sized spaces on the far ends
 
-^ space-between - places an even amount of space between each grid item, with no space at the far ends
+^ **space-between** - places an even amount of space between each grid item, with no space at the far ends
 
-^ space-evenly - places an even amount of space between each grid item, including the far ends
+^ **space-evenly** - places an even amount of space between each grid item, including the far ends
 
 ---
 
-## Example - Start
+## Example - `align-content` Start
 
 ```css
 .container {
@@ -677,7 +671,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - End
+## Example - `align-content` End
 
 ```css
 .container {
@@ -691,7 +685,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Center
+## Example - `align-content` Center
 
 ```css
 .container {
@@ -705,7 +699,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Stretch
+## Example - `align-content` Stretch
 
 ```css
 .container {
@@ -719,7 +713,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Space Around
+## Example - `align-content` Space Around
 
 ```css
 .container {
@@ -733,7 +727,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Space Between
+## Example - `align-content` Space Between
 
 ```css
 .container {
@@ -747,7 +741,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Space Evenly
+## Example - `align-content` Space Evenly
 
 ```css
 .container {
@@ -771,10 +765,10 @@ theme: Plain Jane, 2
 
 ```css
 .item {
-  grid-column-start: <number> | <name> | span <number> | span <name> | auto
-  grid-column-end: <number> | <name> | span <number> | span <name> | auto
-  grid-row-start: <number> | <name> | span <number> | span <name> | auto
-  grid-row-end: <number> | <name> | span <number> | span <name> | auto
+  grid-column-start: <number> | <name> | span <number> | span <name> | auto;
+  grid-column-end: <number> | <name> | span <number> | span <name> | auto;
+  grid-row-start: <number> | <name> | span <number> | span <name> | auto;
+  grid-row-end: <number> | <name> | span <number> | span <name> | auto;
 }
 ```
 
@@ -782,14 +776,14 @@ theme: Plain Jane, 2
 
 ^ Values:
 
-^ **<line>** - can be a number to refer to a numbered grid line, or a name to refer to a named grid line
-^ **span <number>** - the item will span across the provided number of grid tracks
-^ **span <name>** - the item will span across until it hits the next line with the provided name
+^ **`<line>`** - can be a number to refer to a numbered grid line, or a name to refer to a named grid line
+^ **span `<number>`** - the item will span across the provided number of grid tracks
+^ **span `<name>`** - the item will span across until it hits the next line with the provided name
 ^ **auto** - indicates auto-placement, an automatic span, or a default span of one
 
 ---
 
-## Examples
+## Column|Row Start|End Examples
 
 ```css
 .item-a {
@@ -806,7 +800,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Examples
+## Column|Row Start|End Examples (continued)
 
 ```css
 .item-b {
@@ -852,7 +846,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Start
+## Example - `justify-self` Start
 
 ```css
 .item-a {
@@ -866,7 +860,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - End
+## Example - `justify-self` End
 
 ```css
 .item-a {
@@ -880,7 +874,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Center
+## Example - `justify-self` Center
 
 ```css
 .item-a {
@@ -894,7 +888,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Stretch
+## Example - `justify-self` Stretch
 
 ```css
 .item-a {
@@ -930,7 +924,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Start
+## Example - `align-self` Start
 
 ```css
 .item-a {
@@ -944,7 +938,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - End
+## Example - `align-self` End
 
 ```css
 .item-a {
@@ -958,7 +952,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Center
+## Example - `align-self` Center
 
 ```css
 .item-a {
@@ -972,7 +966,7 @@ theme: Plain Jane, 2
 
 ---
 
-## Example - Stretch
+## Example - `align-self` Stretch
 
 ```css
 .item-a {
@@ -992,7 +986,7 @@ theme: Plain Jane, 2
 
 ---
 
-# For next week...
+# For next week
 
 ---
 

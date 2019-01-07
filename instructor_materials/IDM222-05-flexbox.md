@@ -2,15 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 2
+theme: Dark Mode
 
 # IDM 222
-
-## Web Design II
-
----
-
-# Week 5
 
 ## Flexbox
 
@@ -74,7 +68,7 @@ theme: Plain Jane, 2
 
 ---
 
-# Properties for the Parent
+## Properties for the Parent
 
 ### (flex container)
 
@@ -104,7 +98,7 @@ theme: Plain Jane, 2
 
 ---
 
-### `flex-direction`
+### `flex-direction` Syntax
 
 ```css
 .container {
@@ -130,7 +124,7 @@ theme: Plain Jane, 2
 
 ---
 
-### `flex-wrap`
+### `flex-wrap` Syntax
 
 ```css
 .container {
@@ -150,7 +144,7 @@ theme: Plain Jane, 2
 
 ```css
 .container {
-  flex-flow: flex-direction | flex-wrap  
+  flex-flow: flex-direction | flex-wrap
 
   /* example */
   flex-flow: row nowrap; /* default */
@@ -169,7 +163,7 @@ theme: Plain Jane, 2
 
 ---
 
-### `justify-content`
+### `justify-content` Syntax
 
 ```css
 .container {
@@ -201,7 +195,7 @@ theme: Plain Jane, 2
 
 ---
 
-### `align-items`
+### `align-items` Syntax
 
 ```css
 .container {
@@ -233,7 +227,7 @@ theme: Plain Jane, 2
 
 ---
 
-### `align-content`
+### `align-content` Syntax
 
 ```css
 .container {
@@ -260,7 +254,7 @@ theme: Plain Jane, 2
 
 ---
 
-# Properties for the Children
+## Properties for the Children
 
 ### flex items
 
@@ -276,7 +270,7 @@ theme: Plain Jane, 2
 
 ---
 
-### `order`
+### `order` Syntax
 
 ```css
 .item {
@@ -294,7 +288,7 @@ theme: Plain Jane, 2
 
 ---
 
-### `flex-grow`
+### `flex-grow` Syntax
 
 ```css
 .item {
@@ -353,7 +347,7 @@ theme: Plain Jane, 2
 
 ---
 
-### `align-self`
+### `align-self` Syntax
 
 ```css
 .item {
@@ -370,7 +364,7 @@ theme: Plain Jane, 2
 
 ---
 
-# No Effect
+## No Effect
 
 - `float`
 - `clear`
@@ -378,11 +372,11 @@ theme: Plain Jane, 2
 
 ---
 
-# Example Time
+## Example Time
 
 ---
 
-## Great...
+## Can I Use It
 
 [Can I Use It?](http://caniuse.com/#search=flex)
 
@@ -390,13 +384,13 @@ theme: Plain Jane, 2
 
 # Let's Play
 
-![](http://digm.drexel.edu/crs/IDM222/presentations/images/flexboxfroggy.png)
+![flexbox frog](http://digm.drexel.edu/crs/IDM222/presentations/images/flexboxfroggy.png)
 
 [Flexbox Froggy](http://flexboxfroggy.com)
 
 ---
 
-# For next week...
+# For next week
 
 ---
 

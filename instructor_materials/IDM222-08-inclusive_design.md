@@ -2,14 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 2
+theme: Dark Mode
 
 # IDM 222
-## Web Design II
-
----
-
-# Week 8
 
 ## Inclusive Design Patterns
 
@@ -22,7 +17,7 @@ theme: Plain Jane, 2
 
 ---
 
-### The Button Example
+## The Button Example
 
 ^ A designer with just enough knowledge of HTML, CSS and JavaScript wants to add a button to a webpage. They want to style the button to match the web site's design and branding, using a combination of color, images, and typography.
 
@@ -87,7 +82,7 @@ button.addEventListener('click', function() {
 
 ---
 
-![](http://i.giphy.com/QB78LMb32YqoE.gif)
+![James Vanderbeek crying](http://i.giphy.com/QB78LMb32YqoE.gif)
 
 ^ That's a lot of people being left out. Being able to anticipate these problems can help us achieve more, sometimes by doing less. You need to know when to design and when to employ what is _already designed_.
 
@@ -155,7 +150,7 @@ button.addEventListener('click', function() {
 
 ---
 
-## The `lang` Attribute
+## Using the `lang` Attribute
 
 ```html
 <html lang="en"> <!-- English -->
@@ -167,7 +162,7 @@ button.addEventListener('click', function() {
 
 ---
 
-## The `lang` Attribute
+## The `lang` Attribute Benefits
 
 - more indexable by search engines
 - easier to translate
@@ -180,7 +175,7 @@ button.addEventListener('click', function() {
 
 ---
 
-## The `lang` Attribute
+## L'attribut
 
 ```html
 <p>Il ne faut pas mettre tout dans le même sac!</p>
@@ -190,7 +185,7 @@ button.addEventListener('click', function() {
 
 ---
 
-## The `lang` Attribute
+## L'attribut Example
 
 ```html
 <blockquote lang="fr">
@@ -229,12 +224,12 @@ $$HTML / CSS / JavaScript$$
 
 ---
 
-## Progressive Enhancement
+## Progressive Enhancement - Scripts
 
 ```html
 <body>
   <h1>Hello World</h1>
-  <p>Page content etc...</p>
+  <p>Page content etc&hellip;</p>
   <script> // TODO: enhancements </script>
 </body>
 ```
@@ -292,7 +287,7 @@ Promise.all([fontA.load(), fontB.load()]).then(function () {
 
 ---
 
-### Managing Assets - Web Fonts (Concept 2)
+### Managing Assets - Web Fonts (Concept 2) (continued)
 
 ```css
 body {
@@ -308,7 +303,7 @@ body.fonts-loaded {
 
 ---
 
-### Managing Assets - Web Fonts (Concept 2)
+### Managing Assets - Web Fonts (Concept 2) - Promise
 
 ```javascript
 Promise.all([fontA.load(), fontB.load()]).then(function () {
@@ -322,7 +317,7 @@ Promise.all([fontA.load(), fontB.load()]).then(function () {
 
 ---
 
-### Managing Assets - Web Fonts (Concept 2)
+### Managing Assets - Web Fonts (Concept 2) - Session Storage
 
 ```javascript
 if (sessionStorage.foutFontsLoaded) {
@@ -337,7 +332,9 @@ if (sessionStorage.foutFontsLoaded) {
 
 ---
 
-## THINK: How else can we manage assets efficiently?
+## THINK
+
+How else can we manage assets efficiently?
 
 - subset fonts
 - serve optimized images
@@ -379,7 +376,7 @@ Conventional practices:
 
 ---
 
-## The `<main>` Element
+## The `<main>` Element & Printing
 
 ```css
 @media print {
@@ -424,7 +421,7 @@ Conventional practices:
 
 ---
 
-## The Typeface
+## Good Typeface Characteristics
 
 - Generous ascenders (san_**d**_y) and descenders (sand_**y**_)
 - Distinction between I l 1
@@ -487,7 +484,7 @@ main {
 
 ---
 
-### Setting Measure
+### Setting Measure With Media Queries
 
 ```css
 html {
@@ -521,7 +518,7 @@ main {
 
 ---
 
-### Leading (Line Height)
+### Bad Leading
 
 ```css
 /* Don-t do this! */
@@ -539,7 +536,7 @@ p {
 
 ---
 
-### Leading (Line Height)
+### Better Leading (Line Height)
 
 ```css
 /* Do this! */
@@ -608,7 +605,7 @@ p {
 
 ---
 
-### Video Captions
+### VTT Format
 
 ```ttml
 WEBVTT
@@ -653,7 +650,7 @@ But browser vendors couldn't agree on a codec
 
 ---
 
-## Writing Better Content - Example
+## Writing Better Content With Context - Example
 
 ```html
 <h2>Free, you say? Then yes, please!</h2>
@@ -666,7 +663,7 @@ But browser vendors couldn't agree on a codec
 
 ---
 
-## Writing Better Content - Example
+## Write Better Content
 
 ```html
 <h2>Free flapjacks, you say? Yes, please!</h2>
@@ -687,7 +684,7 @@ But browser vendors couldn't agree on a codec
 
 ---
 
-## Writing Better Content - Example 2
+## Writing Better Content - Example 2 (continued)
 
 ```html
 <p>I have a lot of support to back up my ideas,
@@ -714,7 +711,7 @@ But browser vendors couldn't agree on a codec
 
 ---
 
-## For Next Week...
+## For Next Week
 
 ---
 

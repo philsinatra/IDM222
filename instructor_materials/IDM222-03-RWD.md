@@ -2,19 +2,15 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 2
+theme: Dark Mode
 
 # IDM 222
-## Web Design II
+
+## Responsive Web Design
 
 ---
 
-## Week 3
-### Responsive Web Design
-
----
-
-![](http://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-morphing-devices.gif)
+![devices morphing](http://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-morphing-devices.gif)
 
 ^ Today we begin our journey down the path of responsive web design. What is _responsive web design_?
 
@@ -24,7 +20,7 @@ theme: Plain Jane, 2
 
 ## History
 
-![](http://forum.videohelp.com/attachments/20285-1380712447/MrHand.png)
+![Mr. Hand](http://forum.videohelp.com/attachments/20285-1380712447/MrHand.png)
 
 ^ Before there was the internet, there was print. Books, magazines, newspapers etc. Design for print is it's own challenge, but there are some aspects that make this form of design easy. The size of the newspaper is always the same. The position and width of the columns is consistent. Each page of a magazine is the same size with the same safe printable area, and so to design for an ad in a magazine, you have to keep your layout within a certain frame. There is a canvas to use as a boundary for the design.
 
@@ -42,17 +38,20 @@ theme: Plain Jane, 2
 
 ---
 
-![](https://i.ytimg.com/vi/e7EfxMOElBE/maxresdefault.jpg)
+![Steve Jobs](https://i.ytimg.com/vi/e7EfxMOElBE/maxresdefault.jpg)
 
 ^ Then this happened... and the job of the web designer really did change forever. For the first time now a massive audience would regularly be accessing the internet from a device other than their desktop computer. So how do we make our websites work on this new device everyone is going to want. Redesigns are expensive and take time...
 
 ---
 
-#m.
+## m dot
 
 ^ One early solution to this new trend was to create "mdot" sites, or mobile versions of websites that would be served to mobile phones instead of the larger, fixed width desktop sites. So for a site that's optimized for mobile, there's a desktop version and a mobile version. When a web page is accessed, some type of detection code would determine if the user was on a mobile device and if so, redirect the user to the mobile version of the site. Good? Bad? Why?
 
 ---
+
+[.background-color: #ffffff]
+[.footer-style: #111]
 
 ![fit](https://www.mobify.com/static/img/ebooks/mobile-seo-mdot.png)
 
@@ -64,7 +63,7 @@ theme: Plain Jane, 2
 
 ---
 
-![](https://cms-assets.tutsplus.com/uploads/users/16/courses/415/preview_image/csssuperhero2.png)
+![CSS superhero shirt](https://cms-assets.tutsplus.com/uploads/users/16/courses/415/preview_image/csssuperhero2.png)
 
 ^ "mdot" doesn't work. It's to difficult to manage and the experience is to inconsistent. This became very apparent and design/developer [Ethan Marcotte](https://twitter.com/beep?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) coined a solution now known as responsive web design. We can now write CSS rules that apply to our layouts within specific device conditions. So as our canvas, the browser, changes, so does the set of rules applied to our page. One codebase can be served to both the phone and desktop, without the need for any device detection.
 
@@ -165,7 +164,7 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
 ---
 
-![](http://acurrie.me/wp-content/uploads/2014/08/opensignal-02-devices.png)
+![device fragmentation](http://acurrie.me/wp-content/uploads/2014/08/opensignal-02-devices.png)
 
 ^ Today content on the web needs to be available on a never ending list of devices, systems across infinite locations under environmental conditions totally out of the developer's control. Not only are there more devices than one could ever have access to, other factors like location, connection speed, browser, feature support etc. all impact the user's experience online and ability to find the information they're looking for.
 
@@ -173,7 +172,7 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
 ## Be Like Water
 
-![](http://www.bruceleeactionmuseum.org/blam/image/Take%20Action/Conscience%20copy.jpg)
+![Bruce Lee](https://wallpapercave.com/wp/kU1ZooY.jpg)
 
 ^ We can not design for specific devices, specific conditions or specific circumstances. Instead we have to design a system that is flexible regardless of those things that are out of our control.
 
@@ -181,13 +180,14 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
 ## The Ingredients
 
-- 1. A flexible, grid based layout
-- 2. Flexible images and media
-- 3. Media queries
+1. A flexible, grid based layout
+1. Flexible images and media
+1. Media queries
 
 ---
 
 ## Preparation
+
 ### Wireframe
 
 ---
@@ -206,7 +206,7 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
 ---
 
-## Mobile First!
+## Mobile First
 
 ^ Starting with a mobile first design is the best approach. It helps us solve the difficult problem of having very little available canvas. It helps us determine what's really important - what need's to be on this site. If we start with the larger layout, we'll end up either removing items we can't fit in the smaller canvas, or shoe-horning things in sloppily just to make it work.
 
@@ -218,13 +218,13 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
 ---
 
-![](http://socialmarketing.guru/wp-content/uploads/2015/04/content-is-a-king-1.jpg)
+![king content](http://socialmarketing.guru/wp-content/uploads/2015/04/content-is-a-king-1.jpg)
 
 ^ The content will tell you when to add a breakpoint. Content drives the design, it dictates when an adjustment is needed. In the simplest terms: start small. As the canvas gets larger, watch the content. When things start to look bad, add a breakpoint.
 
 ---
 
-![](http://netdna.webdesignerdepot.com/uploads/2015/03/featured.png)
+![device wallpaper](http://netdna.webdesignerdepot.com/uploads/2015/03/featured.png)
 
 ^ Design mobile first based on content using flexible, responsive media manipulated by CSS media queries. Easy right?... So how do we do this?
 
@@ -240,7 +240,7 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
 ---
 
-## Mobile `meta`
+## Mobile `meta` Attributes
 
 Some of the common attributes used with this tag include:
 
@@ -251,7 +251,7 @@ Some of the common attributes used with this tag include:
 
 ---
 
-## Mobile `meta`
+## Mobile `meta` Example
 
 ```html
 <meta name="viewport"
@@ -280,7 +280,7 @@ Some of the common attributes used with this tag include:
 
 ---
 
-### Why?
+### Why
 
 - text may be to small
 - user wants more detail (e.g. images)
@@ -290,7 +290,7 @@ Some of the common attributes used with this tag include:
 
 ---
 
-## Mobile `meta`
+## Mobile `meta` Tag
 
 ```html
 <meta name="viewport"
@@ -364,21 +364,11 @@ html {
 
 ^ It is also a best practice to use relative measurements for font sizes. When you do, users can vary the sizes by using their browsers. In responsive design, the font size that's used by an element is relative to the size of the font used by the parent element. Change the parent font size, you automatically adjust all the children element sizes as well.
 
----
-
-## Sizing Fonts
-
-```css
-html {
-  font-size: 100%;
-}
-```
-
 ^ In this example, **100%** is equal to **16px** if the user has not adjusted the font size manually. So **100%** is really "one hundred percent of the default size or the size the user has chosen".
 
 ---
 
-## Sizing Fonts
+## Sizing Fonts With Pixels
 
 ```css
 html {
@@ -416,16 +406,16 @@ html {
 
 ## CSS3 Media Types
 
-    Value	    Description
+    Value     Description
     ________________________________________________________________
-    all	      Used for all media type devices
+    all       Used for all media type devices
     print     Used for printers
-    screen	  Used for computer screens, tablets, smart-phones etc.
-    speech	  Used for screen readers that "reads" the page out loud
+    screen    Used for computer screens, tablets, smart-phones etc.
+    speech    Used for screen readers that "reads" the page out loud
 
 ---
 
-## Media Queries
+## Media Queries Example
 
 ```css
 @media screen and (min-width: 480px) {
@@ -439,7 +429,7 @@ html {
 
 ---
 
-## Media Queries
+## Media Queries Example 2
 
 ```css
 @media screen and (min-width: 480px) {
@@ -479,7 +469,7 @@ html {
 
 ---
 
-## CSS Media Queries
+## Media Type
 
 ```css
 @media screen and (min-width: 768px) { }
@@ -488,7 +478,7 @@ html {
 
 ---
 
-![](http://www.reactiongifs.com/r/2013/01/relieved.gif)
+![Chevy Chase](http://www.reactiongifs.com/r/2013/01/relieved.gif)
 
 ^ Keep calm. Let's build an example.
 
@@ -498,13 +488,13 @@ html {
 
 ---
 
-![](https://soledadpenades.com/imgs/2014/goto/devtools_responsive.gif)
+![Mozilla Devtools](https://soledadpenades.com/imgs/2014/goto/devtools_responsive.gif)
 
 ^ As you develop a website using a responsive design, you'll want to test it in devices of various sizes to be sure it works as expected. The best way to do this is deploy the design to a web server and test on as many devices as possible. It's a nice thought, but not very practical. Another option is to use the device emulators and browser simulators that are available for many of the most popular mobile devices and browsers. A simpler way yet is to use the developer tools that are provided by most modern browsers. Let's look at a few (Chrome, Firefox).
 
 ---
 
-## Still to come
+## Still To Come
 
 - flexible images
 - flexbox
@@ -513,7 +503,7 @@ html {
 
 ---
 
-![](http://i.giphy.com/SDxzM5LAVq5Tq.gif)
+![Cube](http://i.giphy.com/SDxzM5LAVq5Tq.gif)
 
 ^ If you feel confused, don't worry. The best way to learn this is to try it. Once you see it in action for yourself it will be clearer and you can begin applying the concepts to your site.
 
@@ -529,4 +519,4 @@ html {
 
 ---
 
-## For next week...
+## For next week

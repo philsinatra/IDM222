@@ -2,14 +2,16 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Plain Jane, 2
+theme: Dark Mode
 
 # IDM 222
+
 ## Web Design II
 
 ---
 
 ## Week 1
+
 ### Overview
 
 ---
@@ -84,7 +86,7 @@ aside {
 
 ---
 
-## Where is our content?
+## Where is our content
 
 - computers (desktop/notebook)
 - smart phones
@@ -105,4 +107,4 @@ aside {
 
 ---
 
-## For next week...
+## For next week
