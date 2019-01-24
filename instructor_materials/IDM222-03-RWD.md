@@ -387,6 +387,8 @@ html {
 - width and height of the device
 - orientation (is the tablet/phone in landscape or portrait mode?)
 - resolution
+- available features
+- device capabilities
 
 ^ CSS media queries help us define rulesets in our CSS that only apply in certain circumstances. Instead of looking for a type of device, they look at the capability of the device. Media queries can be used to check many things, such as: (bulleted list)
 
@@ -498,7 +500,8 @@ html {
 
 - flexible images
 - flexbox
-- accessibility
+- grid
+- inclusive design / accessibility
 - preprocessors
 
 ---
