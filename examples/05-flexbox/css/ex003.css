@@ -6,43 +6,34 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-.navigation {
-	list-style: none;
-	margin: 0;
-
-	background: deepskyblue;
-
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-
-	-webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
-	padding: 0;
-}
-
 .navigation a {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
 	color: white;
 	display: block;
 	padding: 1em;
 	text-align: center;
 	text-decoration: none;
-	border-top: 1px solid rgba(255, 255, 255, 0.3);
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .navigation a:hover {
 	background: darkblue;
 }
 
+.navigation {
+	background: deepskyblue;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	flex-flow: column wrap;
+}
+
 
 @media all and (min-width: 600px) {
 	.navigation {
-		-webkit-flex-flow: row wrap;
 		flex-flow: row wrap;
-
 		justify-content: space-around;
 	}
 

@@ -7,25 +7,6 @@ body {
 	padding: 2em;
 }
 
-.wrapper {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-
-	font-weight: bold;
-	text-align: center;
-}
-
-.wrapper>* {
-	padding: 10px;
-	flex: 1 100%;
-}
-
 .header {
 	background: tomato;
 }
@@ -47,7 +28,24 @@ body {
 	background: hotpink;
 }
 
+.wrapper {
+	font-weight: bold;
+	text-align: center;
+
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.wrapper>* {
+	padding: 10px;
+	flex: 1 100%;
+}
+
 @media all and (min-width: 600px) {
+	.wrapper {
+		flex-direction: row;
+	}
+
 	.aside {
 		flex: 1 auto;
 	}

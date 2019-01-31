@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.control {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+	width: 300px;
+}
+
+.control label {
+	color: #666;
+	font-size: 80%;
+	margin-bottom: .25rem;
+	text-transform: uppercase;
+}
+
+.control input[type="text"],
+.control input[type="email"] {
+	padding: .5rem;
+}
+
+/* How would I get the form in the center of the page? */
+form {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type="submit"] {
+	padding: .5rem;
+	font-size: 1rem;
+	background-color: skyblue;
+	border-radius: 0;
+	box-shadow: 0;
+	border: 0;
+	text-transform: uppercase;
+	/* Don't add immediately */
+	transition: all 225ms ease;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	background-color: tomato;
+	color: white;
+}
