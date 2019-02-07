@@ -2,63 +2,135 @@
 	box-sizing: border-box;
 }
 
-header {
-	grid-area: header;
+body {
+	font-family: sans-serif;
 }
-
-main {
-	grid-area: main;
-}
-
-aside {
-	grid-area: sidebar;
-}
-
-footer {
-	grid-area: footer;
-	justify-self: center;
-}
-
-.grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 3rem 1fr;
-	grid-template-rows: auto;
-	grid-template-areas:
-		"header header header header"
-		"main main . sidebar"
-		"footer footer footer footer";
-	/* What happens if we rearrange the template areas? */
-
-	margin: 3rem auto;
-	max-width: 64rem;
-}
-
-/*
-header {
-  background-color: blue;
-}
-
-main {
-  background-color: yellow;
-}
-
-aside {
-  background-color: red;
-}
-
-footer {
-  background-color: green;
-}
-*/
 
 img {
 	max-width: 100%;
 }
 
+header {
+	background: blue;
+}
+
+main {
+	background: yellow;
+}
+
+aside {
+	background: red;
+}
+
+footer {
+	background: green;
+}
+
+.grid {
+	display: flex;
+	flex-direction: column;
+}
+
+/* -------------------------------------------------------------- */
+/* Setup the gallery as a flex display system. */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.gallery img {
+	margin-bottom: 1rem;
+}
+
+/* -------------------------------------------------------------- */
+/* Switch the gallery to a grid display system. */
 .gallery {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 157px;
-	grid-column-gap: .5rem;
-	grid-row-gap: .5rem;
+	grid-template-columns: repeat(4, 1fr);
+
+	/*
+  The repeat function allows us to repeat columns as many times as needed.
+  The 1fr is what tells the browser to distribute the space between the
+  columns so that each column equally gets one fraction of that space.
+  That is, they're all fluid, equal-width columns. And the grid will,
+  in this example, always have 4 columns regardless of how wide it is.
+  This, as you have probably guessed, is not good enough, as the content
+  will be too squished on smaller viewports.
+
+  So we need to start by specifying a minimum width for the columns,
+  making sure they don't get too narrow. We can do that using the
+  minmax() function.
+  */
+	grid-template-columns: repeat(4, minmax(200px, 1fr));
+
+	/*
+  But the way CSS Grid works, this will cause overflow in the row.
+  The columns will not wrap into new rows if the viewport width is
+  too narrow to fit them all with the new minimum width requirement,
+  because we're explicitly telling the browser to repeat the columns
+  4 times per row.
+
+  To achieve wrapping, we can use the auto-fit or auto-fill keywords.
+
+  These keywords tell the browser to handle the column sizing and element
+  wrapping for us, so that the elements will wrap into rows when the width
+  is not large enough to fit them in without any overflow. The fraction
+  unit we used also ensures that, in case the width allows for a fraction
+  of a column to fit but not a full column, that space will instead be
+  distributed over the column or columns that already fit, making sure we
+  aren't left with any empty space at the end of the row.
+  */
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: .5rem;
+	justify-items: center;
+	align-items: center;
+}
+
+.gallery img {
+	margin-bottom: 0;
+}
+
+/* -------------------------------------------------------------- */
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+	header {
+		grid-area: header;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	aside {
+		grid-area: sidebar;
+	}
+
+	footer {
+		grid-area: footer;
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 3rem 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"header header header header"
+			"main main . sidebar"
+			"footer footer footer footer";
+		margin: 3rem auto;
+		max-width: 64rem;
+	}
+
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 157px;
+		grid-gap: .5rem;
+	}
 }
