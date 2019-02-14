@@ -376,7 +376,7 @@ video {
 
 ```html
 <picture>
-   <source type="image/svg" srcset="logo.svg" />
+   <source type="image/webp" srcset="logo.webp" />
    <source type="image/png" srcset="logo.png" />
    <img src="logo.gif" alt="my logo" />
 </picture>
@@ -384,7 +384,7 @@ video {
 
 ^ The Type-Switching use case is great if we want to give a new file format a spin, and provide a fallback for non-supporting browsers.
 
-^ If the browser doesn't understand the `image/svg` media type, it skips the first `source`; if it can't figure out `image/png`, it falls back to `img` and the GIF file.[^1]
+^ If the browser doesn't understand the `image/webp` media type, it skips the first `source`; if it can't figure out `image/png`, it falls back to `img` and the GIF file.[^1]
 
 [^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
 

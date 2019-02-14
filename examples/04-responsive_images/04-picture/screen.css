@@ -1,0 +1,18 @@
+:root {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+picture {
+	display: block;
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto 3rem;
+	max-width: 800px;
+}
