@@ -1,0 +1,65 @@
+@font-face {
+	font-family: 'SourceSansVariable';
+	src: url('fonts/SourceSansVariable-Roman.ttf') format('truetype');
+	font-weight: 1 999;
+}
+
+@font-face {
+	font-family: 'SourceSans';
+	src: url('fonts/SourceSansPro-Black.ttf.woff2') format('woff2'),
+		url('fonts/SourceSansPro-Black.ttf.woff') format('woff');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'SourceSans';
+	src: url('fonts/SourceSansPro-Semibold.ttf.woff2') format('woff2'),
+		url('fonts/SourceSansPro-Semibold.ttf.woff.ttf.woff') format('woff');
+	font-weight: 500;
+}
+
+html {
+	box-sizing: border-box;
+	font-family: 'SourceSans', sans-serif;
+	font-size: 100%;
+	font-weight: 400;
+}
+
+@supports (font-variation-settings: normal) {
+	html {
+		font-family: 'SourceSansVariable', sans-serif;
+		font-variation-settings: "wght"400;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	html {
+		font-size: 150%;
+	}
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 65ch;
+}
+
+h1 {
+	font-weight: 900;
+	font-variation-settings: "wght"900;
+}
+
+h2 {
+	font-weight: 700;
+	font-variation-settings: "wght"700;
+}
+
+h3 {
+	font-weight: 500;
+	font-variation-settings: "wght"500;
+}
