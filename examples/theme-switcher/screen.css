@@ -1,0 +1,49 @@
+@import '../normalize.css';
+@import './themes.css';
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-weight: 400;
+	min-height: 100vh;
+	padding: 3rem 0;
+}
+
+.contain {
+	margin: 0 auto;
+	max-width: 55ch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0 0 1.5rem;
+}
+
+.contain p:last-child {
+	margin-bottom: 3rem;
+}
+
+
+.lead {
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+figure {
+	margin: 3rem auto;
+	max-width: 40rem;
+}
+
+figcaption {
+	color: gray;
+	font-size: 0.875rem;
+	text-align: right;
+}

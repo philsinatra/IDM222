@@ -16,17 +16,6 @@ theme: Dark Mode
 
 ---
 
-## Hello
-
-I am Phil Sinatra, professor in the Interactive Digital Media program.
-
-You can find me at:
-
-- ps42@drexel.edu
-- [@philsinatra](https://twitter.com/philsinatra)
-
----
-
 ## About This Course
 
 - [Drexel Learn](https://learn.dcollege.net/webapps/login/)

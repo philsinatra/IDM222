@@ -1,0 +1,19 @@
+html {
+	background-color: #fefefe;
+	font-size: 100%;
+}
+
+* {
+	background-color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		filter: invert(100%);
+	}
+
+	img,
+	video {
+		filter: invert(100%);
+	}
+}
