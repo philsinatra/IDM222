@@ -1,25 +1,27 @@
-# IDM222 Assignment 3: CSS Grids and Responsive Images
+# IDM222 Assignment 3: Grid
 
 This page describes an assignment for this course. Due dates and submissions are handled through [Drexel Blackboard](https://learn.dcollege.net/).
 
-## Assignment 3: CSS Grids and Responsive Images
+## Assignment 3: Grid
 
-1. Complete [_Assignment 3: CSS Grids and Responsive Images_](https://idm-hw.netlify.com/).
+1. Complete [_Assignment 3: Grid_](https://idm-hw.netlify.com/).
 
-Follow the instructions on screen and complete the assignment questions. When you have answered all of the questions and are satisfied with your score, select the submit button at the bottom of the page. You'll receive a confirmation number that you must enter in [Drexel Blackboard](https://learn.dcollege.net/) under _Assignment 3: CSS Grids and Responsive Images_.
+Follow the instructions on screen and complete the assignment questions. When you have answered all of the questions and are satisfied with your score, select the submit button at the bottom of the page. You'll receive a confirmation number that you must enter in [Drexel Blackboard](https://learn.dcollege.net/) under _Assignment 3: Grid_.
 
 ## Suggested Work
 
 - Continue to inventory your content.
-- Create all of the .html pages required for your final project.
-- Incorporate a CSS grid system into your master stylesheet, and apply the grid system to your HTML structure.
-- Begin implementing responsive images throughout your site
+- Create all of the .html pages required for your project.
+- Determine where in your design grid may be able to be used to simplify your code and enhance the responsiveness of your site.
+- Implement the grid model into at least one aspect of your project.
+- Validate all .html files included in your project.
+- Validate all custom .css files included in your project.
 
 ## Submitting the Assignment
 
 Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Assignment 3**:
 
-1. Your confirmation code that you receive after completing _Assignment 3: CSS Grids and Responsive Images_.
+1. Your confirmation code that you receive after completing _Assignment 3: Grid_.
 
 **Late submissions receive zero points.**
 
