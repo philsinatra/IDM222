@@ -1,21 +1,18 @@
 # Syllabus
 
-<!-- TOC -->
-
 ## Description
 
 This course builds upon the topics covered in Web Authoring I by exploring advanced web development topics and current industry best practices.
 
 ## Course Purpose
 
-This course explores the principles and techniques for creating Mobile First, Responsive web sites using advance HTML5, CSS3, Javascript, Embedded Fonts, SASS, and version control.
+This course explores the principles and techniques for creating Mobile First, Responsive web sites using advance HTML5, CSS3, Javascript, Embedded Fonts, and version control.
 
 ## Learning Objectives
 
 By the end of the course, student will be able to
 
 - Apply responsive design techniques to develop web sites that are accessible on a variety of devices
-- Use preprocessors and code repositories for maintaining a web code base
 - Demonstrate competency with modern web language technologies
 
 ## Schedule
@@ -23,14 +20,14 @@ By the end of the course, student will be able to
 | Week | Topic |
 | ---- | ----- |
 | Week 1 | Introduction |
-| Week 2 | CSS Transitions, Transforms, Animations & Filters |
-| Week 3 | Responsive Web Design: Theory and How To |
-| Week 4 | Responsive Web Design: Images and Grids |
-| Week 5 | Responsive Web Design: Flexbox |
-| Week 6 | Responsive Web Design: CSS Grid |
-| Week 7 | Responsive Web Design: Accessibility |
+| Week 2 | Responsive Web Design: Media Queries |
+| Week 3 | Flexbox |
+| Week 4 | CSS Grid |
+| Week 5 | Responsive Images |
+| Week 6 | CSS Transitions, Transforms, Animations & Filters |
+| Week 7 | Inclusive Design |
 | Week 8 | Preprocessors |
-| Week 9 | Demo Lab |
+| Week 9 | Variable Fonts & Demo Lab |
 | Week 10 | Open Lab |
 
 ## Required Materials
@@ -52,7 +49,7 @@ By the end of the course, student will be able to
 
 ## Homework Submissions
 
-Homework assignments are due by midnight, the night before class meets. All assignments will be submitted through BlackBoard. Assignments submitted late will receive <b>zero</b> points, no exceptions.
+Homework assignments are due by midnight, the night before class meets. All assignments will be submitted through BlackBoard. Assignments submitted late will receive **zero** points, no exceptions.
 
 ### Grading Scale
 
@@ -77,22 +74,21 @@ Critiques are opportunities to learn and share what you’ve learned through dem
 
 ## Attendance Policy
 
-Attendance is mandatory. Students are expected to attend all classes and strictly adhere to the project due dates. Lack of participation in class discussions will count against your grade. Students are allowed one unexcused absence. If a student has more than one unexcused absence, his or her grade for the course will be reduced one letter grade. If a student has three or more absences, he or she will receive an F grade. Please also see the official Drexel University Policy on Absences at <a href="http://www.drexel.edu/provost/policyweb/absence.html" target="\_blank">http://www.drexel.edu/provost/policyweb/absence.html</a>
+Attendance is mandatory. Students are expected to attend all classes and strictly adhere to the project due dates. Lack of participation in class discussions will count against your grade. Students are allowed one unexcused absence. If a student has more than one unexcused absence, his or her grade for the course will be reduced one letter grade. If a student has three or more absences, he or she will receive an F grade. Please also see the official Drexel University Policy on Absences at [http://www.drexel.edu/provost/policyweb/absence.html](http://www.drexel.edu/provost/policyweb/absence.html)
 
 ### Add, Drop and Withdrawal Policies
 
-During the pre-enrollment period through the end of the second week of classes for the term, all students, with the exception of 1st term freshmen, may add courses that are free from restrictions/permissions, by using BANNER Web for Students. See <a href="http://www.drexel.edu/provost/policies/course_add.asp" target="\_blank">http://www.drexel.edu/provost/policies/course_add.asp</a>
+During the pre-enrollment period through the end of the second week of classes for the term, all students, with the exception of 1st term freshmen, may add courses that are free from restrictions/permissions, by using BANNER Web for Students. See [http://www.drexel.edu/provost/policies/course_add.asp](http://www.drexel.edu/provost/policies/course_add.asp)
 
 If you add this course after the start of the term, you are responsible for completing ALL work that you may have missed.
 
-For both graduate and undergraduate students, courses may only be dropped during the “drop period” lasting from the beginning of the enrollment period through the end of the second week of the quarter. Dropping a course results in the course being removed from the student’s academic record without a “W” appearing on the transcript—specifically, neither the course nor the grade of “W” appears on the student’s transcript. See <a href="http://www.drexel.edu/provost/policies/course_drop.asp" target="\_blank">http://www.drexel.edu/provost/policies/course_drop.asp</a>
+For both graduate and undergraduate students, courses may only be dropped during the “drop period” lasting from the beginning of the enrollment period through the end of the second week of the quarter. Dropping a course results in the course being removed from the student’s academic record without a “W” appearing on the transcript—specifically, neither the course nor the grade of “W” appears on the student’s transcript. See [http://www.drexel.edu/provost/policies/course_drop.asp](http://www.drexel.edu/provost/policies/course_drop.asp)
 
-Drexel University allows students to drop a course through the end of the sixth week of the term. This means that you will not be allowed to drop a course, even if you are failing, after the sixth week of the term. The number of times you have already been absent, the status of your lab hours and, above all, the result of your midterm testing and other evaluations (chapter tests, quizzes, homework) are therefore your best guide to decide whether or not you should drop the course. See <a href="http://www.drexel.edu/provost/policies/pdf/course_withdrawal.pdf" target="\_blank">http://www.drexel.edu/provost/policies/pdf/course_withdrawal.pdf</a>
+Drexel University allows students to drop a course through the end of the sixth week of the term. This means that you will not be allowed to drop a course, even if you are failing, after the sixth week of the term. The number of times you have already been absent, the status of your lab hours and, above all, the result of your midterm testing and other evaluations (chapter tests, quizzes, homework) are therefore your best guide to decide whether or not you should drop the course. See [http://www.drexel.edu/provost/policies/pdf/course_withdrawal.pdf](http://www.drexel.edu/provost/policies/pdf/course_withdrawal.pdf)
 
-## Plagiarism Policy:
+## Plagiarism Policy
 
 Plagiarism is the inclusion of someone else’s words, ideas, or data as one’s own work. When a student submits work for credit that includes the words, ideas, or data of others, the source of that information must be acknowledged through complete, accurate, and specific references, and, if verbatim statements are included, through quotation marks as well. By placing his/her name on work submitted for credit, the student certifies the originality of all work not otherwise identified by appropriate acknowledgments. Plagiarism covers unpublished as well as published sources. Examples of plagiarism include, but are not limited to:
-
 
 - Quoting another person’s actual words, complete sentences or paragraphs, or an entire piece of written work without acknowledgment of the source
 - Using another person’s ideas, opinions, or theory, even if it is completely paraphrased in one’s own words without acknowledgment of the source
@@ -103,7 +99,7 @@ Plagiarism is the inclusion of someone else’s words, ideas, or data as one’s
 
 Students are urged to consult with individual faculty members, academic departments, or recognized handbooks in their field if in doubt regarding issues of plagiarism.
 
-### Drexel University Policy on Cheating:
+### Drexel University Policy on Cheating
 
 Cheating is an act or an attempted act of deception by which a student seeks to misrepresent that he or she has mastered information on an academic exercise that he/she has not mastered. Examples include, but are not limited to:
 
@@ -114,7 +110,7 @@ Cheating is an act or an attempted act of deception by which a student seeks to 
 
 Please also see the official Drexel university policy on Academic Dishonesty at [http://www.drexel.edu/provost/policies/academic_dishonesty.asp](http://www.drexel.edu/provost/policies/academic_dishonesty.asp)
 
-## Statement for Students with Disabilities:
+## Statement for Students with Disabilities
 
 Students with disabilities requesting accommodations and services at Drexel University need to present a current accommodation verification letter (AVL) to faculty before accommodations can be made. This MUST be done prior to the midterm! AVL’s are issued by the Office of Disability Services (ODS). For additional information, contact ODS at [http://www.drexel.edu/oed/policies/Overview/](http://www.drexel.edu/oed/policies/Overview/)
 

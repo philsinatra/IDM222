@@ -1,0 +1,108 @@
+:root {
+	--blue-lightest: #4DC0FF;
+	--blue-light: #4DC0FF;
+	--blue: #0084CC;
+	--blue-dark: #26607F;
+	--blue-darkest: #00527F;
+
+	--red-lightest: #F5A6A5;
+	--red-light: #E54545;
+	--red: #E50000;
+	--red-dark: #990000;
+	--red-darkest: #660000;
+
+	--primary-light: var(--blue-light);
+	--primary: var(--blue);
+	--primary-dark: var(--blue-darkest)
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-color: var(--primary-dark);
+	font: 100%/1.4 Arial, sans-serif;
+}
+
+header {
+	background-color: var(--primary);
+	color: white;
+	padding: 1rem;
+	text-align: center;
+}
+
+.contain {
+	background-color: white;
+	margin: 1rem auto;
+	/* 960/16 */
+	max-width: 60rem;
+	padding: 1rem;
+	width: 80%;
+}
+
+aside {
+	background-color: var(--primary-light);
+	padding: 1rem;
+}
+
+aside h3 {
+	margin-top: 0;
+}
+
+aside p:last-child {
+	margin-bottom: 0;
+}
+
+@media (min-width: 37.5em) {
+
+	/* 600px */
+	.contain {
+		overflow: auto;
+		width: 100%;
+	}
+
+	header {
+		text-align: left;
+	}
+
+	main,
+	aside {
+		float: left;
+	}
+
+	main {
+		padding-right: 1rem;
+		width: 60%;
+	}
+
+	aside {
+		width: 40%;
+	}
+}
+
+@media (min-width: 56.25em) {
+
+	/* 900px */
+	:root {
+		--primary-light: var(--red-light);
+		--primary: var(--red);
+		--primary-dark: var(--red-darkest)
+	}
+
+	header {
+		background-color: red;
+	}
+
+	main,
+	aside {
+		width: 50%;
+	}
+}

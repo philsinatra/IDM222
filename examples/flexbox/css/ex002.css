@@ -1,0 +1,37 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.flex-item {
+	background: tomato;
+	color: white;
+	font-size: 3em;
+	font-weight: bold;
+	height: 150px;
+	line-height: 150px;
+	margin-top: 10px;
+	padding: 5px;
+	text-align: center;
+	width: 200px;
+}
+
+.flex-container {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: flex;
+
+	/* show column, column-reverse, row-reverse */
+	flex-flow: row wrap;
+
+	/* flex-start, flex-end, center, space-between */
+	justify-content: space-around;
+}

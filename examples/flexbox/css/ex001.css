@@ -1,0 +1,28 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+}
+
+.parent {
+	background-color: #bd10e0;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.child {
+	background-color: #f5a623;
+	width: 12.5rem;
+	height: 12.5rem;
+}

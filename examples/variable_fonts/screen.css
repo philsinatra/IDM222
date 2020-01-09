@@ -25,6 +25,12 @@ html {
 	font-weight: 400;
 }
 
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 @supports (font-variation-settings: normal) {
 	html {
 		font-family: 'SourceSansVariable', sans-serif;
@@ -36,12 +42,6 @@ html {
 	html {
 		font-size: 150%;
 	}
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
 }
 
 main {

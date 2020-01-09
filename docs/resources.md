@@ -2,14 +2,14 @@
 
 ## Lecture Slides
 
-- [01 Introduction](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-01-introduction.pdf)
-- [02 Fun With CSS](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-02-CSS.pdf)
-- [03 Responsive Web Design - Intro](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-03-RWD.pdf)
-- [04 Responsive Images](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-04-responsive_images.pdf)
-- [05 Flexbox](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-05-flexbox.pdf)
-- [06 CSS Grid](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-06-grid.pdf)
-- [07 Preprocessors](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-07-preprocessors.pdf)
-- [08 Inclusive Design Patterns](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-08-inclusive_design.pdf)
+- [01 Introduction](http://digm.drexel.edu/crs/IDM222/presentations/pdf/01-introduction.pdf)
+- [02 Media Queries](http://digm.drexel.edu/crs/IDM222/presentations/pdf/02-media-queries.pdf)
+- [03 Flexbox](http://digm.drexel.edu/crs/IDM222/presentations/pdf/03-flexbox.pdf)
+- [04 Grid](http://digm.drexel.edu/crs/IDM222/presentations/pdf/04-grid.pdf)
+- [05 Responsive Images](http://digm.drexel.edu/crs/IDM222/presentations/pdf/05-responsive-images.pdf)
+- [06 CSS Animations & Transitions](http://digm.drexel.edu/crs/IDM222/presentations/pdf/06-animations-transitions.pdf)
+- [07 Inclusive Design Patterns](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-08-inclusive_design.pdf)
+- [08 Preprocessors](http://digm.drexel.edu/crs/IDM222/presentations/pdf/08-preprocessors.pdf)
 
 ## Reading Material
 
