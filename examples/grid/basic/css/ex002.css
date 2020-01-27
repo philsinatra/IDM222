@@ -10,6 +10,7 @@ img {
 	max-width: 100%;
 }
 
+/*
 header {
 	background: blue;
 }
@@ -25,7 +26,7 @@ aside {
 footer {
 	background: green;
 }
-
+*/
 .grid {
 	display: flex;
 	flex-direction: column;
@@ -98,7 +99,7 @@ footer {
 	justify-content: center;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 56.25em) {
 	header {
 		grid-area: header;
 	}
