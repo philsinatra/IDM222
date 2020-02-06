@@ -37,7 +37,7 @@ video {
 }
 ```
 
-^ More good news - we can enhance our selector to include other types of media including video. The `max-width` constraint is a great, light weight solution. And we haven't needed a media query to incorporate any of this. But this technique isn't bulletproof. Can anything tell me a reason/situation this technique might not be the best solution?
+^ More good news - we can enhance our selector to include other types of media including video. The `max-width` constraint is a great, light weight solution. And we haven't needed a media query to incorporate any of this. But this technique isn't bulletproof. Can anybody give me a reason/situation where this technique might not be the best solution?
 
 ---
 
@@ -86,7 +86,7 @@ video {
   alt="my image">
 ```
 
-^ Let's start simply, with a fixed with image that we want to adapt to varying device pixel refuse.
+^ Let's start simply, with a fixed width image that we want to adapt to varying device pixel refuse.
 
 ^ To do this, will use the first tool that the new spec gives us for grouping and describing image sources: the `srcset` attribute. Say we have two versions of an image, we want to send large.jpg only do users with high resolution screens. Using `srcset` that, we markup or image like this:[^1]
 
