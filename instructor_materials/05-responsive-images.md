@@ -83,7 +83,7 @@ video {
 ```html
 <img srcset="small.jpg 1x, large.jpg 2x"
   src="small.jpg"
-  alt="my image">
+  alt="my image" />
 ```
 
 ^ Let's start simply, with a fixed width image that we want to adapt to varying device pixel refuse.
@@ -257,8 +257,7 @@ video {
 ```html
 <picture>
    <source type="image/webp" srcset="logo.webp" />
-   <source type="image/png" srcset="logo.png" />
-   <img src="logo.gif" alt="my logo" />
+   <img src="logo.png" alt="my logo" />
 </picture>
 ```
 
@@ -282,7 +281,3 @@ video {
 ^ Example Time
 
 ^ _examples/responsive-images/_
-
----
-
-# For Next Week
