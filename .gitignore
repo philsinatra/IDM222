@@ -48,13 +48,10 @@ Thumbs.db
 
 # Custom #
 ######################
-*.jpg
-*.png
 *.gif
-*.webp
 /assignments
 build
-examples/week4/picture/images
+examples/grid/**/*.jpg
 graphics
 instructor_materials/WORKSHOP.md
 instructor_materials/images
