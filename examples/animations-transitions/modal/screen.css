@@ -1,0 +1,87 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Add this last */
+[hidden] {
+	display: none !important;
+}
+
+button {
+	background-color: skyblue;
+	padding: .75rem;
+	border-radius: 0;
+	border: 0;
+	font-size: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: background-color 225ms ease-in-out;
+}
+
+button:hover,
+button:focus {
+	background-color: palevioletred;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.modal {
+	height: 100vh;
+	width: 100vw;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.modal .blanket {
+	background-color: rgba(0, 0, 0, .8);
+
+	height: 100vh;
+	width: 100vw;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.modal-body {
+	background-color: #fff;
+	border: 1rem solid skyblue;
+
+	height: 50vh;
+	max-width: 50vw;
+
+	position: relative;
+	z-index: 101;
+
+	padding: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	font-size: 2rem;
+	font-weight: 300;
+	text-align: center;
+}
