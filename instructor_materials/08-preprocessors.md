@@ -2,7 +2,7 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
 # IDM 222
 

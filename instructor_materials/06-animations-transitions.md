@@ -2,15 +2,11 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
-
-# IDM 222
-
----
+theme: Work, 1
 
 ## CSS Fun
 
-![right](https://webdesignledger.com/wp-content/uploads/2015/11/Singing-Octo-by-Fede-Cook.gif)
+![fill](https://webdesignledger.com/wp-content/uploads/2015/11/Singing-Octo-by-Fede-Cook.gif)
 
 ---
 
@@ -23,12 +19,6 @@ theme: Dark Mode
 
 ---
 
-## CSS Transitions
-
-^ _Transitions_ let you gradually change one or more of the CSS properties for an element over a specified period of time. As you'll see, transitions let you provide features with CSS3 alone that would otherwise require JavaScript and jQuery.
-
----
-
 ## CSS Transition Properties
 
 ```tex
@@ -38,6 +28,8 @@ transition-duration         (milli)seconds
 transition-timing-function  speed curve
 transition-delay            (milli)seconds before start
 ```
+
+^ _Transitions_ let you gradually change one or more of the CSS properties for an element over a specified period of time. As you'll see, transitions let you provide features with CSS3 alone that would otherwise require JavaScript and jQuery.
 
 ^ Here are the five properties that can be used for transitions. The shorthand _transition_ property is the easiest to code. The _transition-property_ specifies the property(s) that the transition is for. Use commas to separate multiple CSS properties. The _transition-duration_ specifies the seconds or milliseconds that the transition will take. The _transition-timing-function_ specifies the speed curve of the transition. Values include: ease, linear, ease-in, ease-out, ease-in-out and cubic-bezier. The _transition-delay_ specifies the seconds or milliseconds before the transition starts.
 
@@ -124,7 +116,7 @@ a:hover {
 
 ---
 
-## Practical Application
+> Practical Application
 
 ^ Adding transitions is a great way to give your content more personality and provide the user a more enjoyable experience. Transitions can also help with functionality, and provide a simpler, faster method of programming. Let's look at another example. (_examples/animations-transitions/02-transitions-accordion.html_)
 
@@ -132,18 +124,16 @@ a:hover {
 
 ## CSS Transforms
 
-^ _Transforms_ let your rotate, scale, skew and position HTML elements using CSS code.
-
-^ When you combine transforms with transitions, you can create some interesting animations for your HTML elements.
-
----
-
-## 2D Transforms
+### 2D Transforms
 
 ```tex
 transform          Applies transform methods
 transform-origin   Changes the default origin point
 ```
+
+^ _Transforms_ let your rotate, scale, skew and position HTML elements using CSS code.
+
+^ When you combine transforms with transitions, you can create some interesting animations for your HTML elements.
 
 ^ The transform property lets you apply one or more transforms to an HTML element. The transform-origin property lets you change the origin point for the transform. Methods for 2D transformations include rotate, scale, skew, translate and matrix (which let your do all the other methods in a single method).
 
@@ -301,17 +291,15 @@ h1 {
 
 ## CSS Filters
 
-^ _Filters_ let you change the appearance of images after they've been loaded into the browser without changing the image files. You can convert an image to grayscale or blur an image.
-
----
-
-## CSS Filters Syntax
+### CSS Filters Syntax
 
 ```css
 image {
   filter: [filtermethod(value)];
 }
 ```
+
+^ _Filters_ let you change the appearance of images after they've been loaded into the browser without changing the image files. You can convert an image to grayscale or blur an image.
 
 ^ There are various filters available. We'll look at a couple examples here. Research online to find a full list of available filters and the values that are accepted for each.
 
@@ -322,7 +310,3 @@ image {
 ## Great. Can I Use CSS Filters
 
 [Can I Use It?](http://caniuse.com/#search=filter)
-
----
-
-## For next week

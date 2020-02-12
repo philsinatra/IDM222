@@ -2,17 +2,13 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 222
+# Flexbox
 
-## Flexbox
+![fill](https://spin.atomicobject.com/wp-content/uploads/20160615142357/flexbox-animation.gif)
 
 ^ The _Flexbox Layout_ (Flexible Box) module (currently a W3C Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").
-
----
-
-![fit](https://spin.atomicobject.com/wp-content/uploads/20160615142357/flexbox-animation.gif)
 
 ^ The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.
 
@@ -372,7 +368,7 @@ theme: Dark Mode
 
 ---
 
-## Example Time
+> Example Time
 
 ^ _examples/flexbox_
 
@@ -390,10 +386,4 @@ theme: Dark Mode
 
 [Flexbox Froggy](http://flexboxfroggy.com)
 
----
-
-# For next week
-
----
-
-Examples and concepts pulled from [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+^ Examples and concepts pulled from [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

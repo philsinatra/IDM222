@@ -2,19 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 222
-
-## Web Design II
-
----
-
-## Week 1
-
-### Overview
-
----
+# Overview
 
 ## About This Course
 
@@ -22,10 +12,6 @@ theme: Dark Mode
 - [Course Repository](https://github.com/philsinatra/IDM222)
 
 ^ All course information including syllabus, overview and assignments will be managed through Drexel's Blackboard (BBLearn) system. Let's log in and review the syllabus and course information now.
-
----
-
-## Let's Freshen Up
 
 ---
 
@@ -90,10 +76,6 @@ aside {
 
 ---
 
-## RWD = Tool
+> RWD = Tool
 
 ^ Responsive web design is a tool that we as developers can use to achieve this goal.
-
----
-
-## For next week

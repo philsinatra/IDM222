@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 222
-
-## Responsive Images
+> Responsive Images
 
 ^ We need to add that rule. We need to prevent the image from exceeding the width of its container. We need flexible or fluid images.
 
@@ -54,11 +52,15 @@ video {
 
 ## Responsive HTML Images
 
+```html
+   <picture>
+     <source media="(min-width: 650px)" srcset="images/kitten-large.png" />
+     <source media="(min-width: 465px)" srcset="images/kitten-medium.png" />
+     <img src="images/kitten-small.png" alt="cute kitten" />
+   </picture>
+```
+
 ^ A new HTML feature has been defined with a goal of providing client-side solution for delivering alternate image data based on device capabilities to prevent wasted bandwidth and optimize display for both screen and print. [ricg](http://responsiveimages.org)
-
----
-
-## Responsive HTML Images with `picture`
 
 ^ Images have been a huge obstacle to implementing truly adaptable responsive pages. The latest specification of the `picture` element give us semantic ways to group multiple versions of the same image, each version having technical characteristics that make it more or less suitable for a particular user. Let's look at some of the ways browsing environments vary and how we want our images to adapt in these cases. [^1]
 
@@ -92,17 +94,13 @@ video {
 
 ^ The `srcset` attribute takes a comma separated list of image URLs, each with an `x` descriptor stating the _device-pixel-ratio_ that the file is intended for. The `src` is there for browsers that don't understand `srcset`.[^2]
 
+^ That markup will not efficiently squish and stretch our image in a fluid layout. This technique allows us to tell the browser the rendered size of our image. Once we tell the browser how many pixels it needs and how many pixels each of our sources has, picking a source becomes trivial. The browser picks the smallest source that will still look reasonably crisp within its container.[^3]
+
 [^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
 
 [^2]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
 
----
-
-## Fluid / Variable Sized Images Use Case
-
-^ That markup will not efficiently squish and stretch our image in a fluid layout. This technique allows us to tell the browser the rendered size of our image. Once we tell the browser how many pixels it needs and how many pixels each of our sources has, picking a source becomes trivial. The browser picks the smallest source that will still look reasonably crisp within its container.[^1]
-
-[^1]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
+[^3]: [Smashing Magazine](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/)
 
 ---
 

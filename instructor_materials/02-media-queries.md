@@ -2,13 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
-
-# IDM 222
+theme: Work, 1
 
 ## Responsive Web Design
-
----
 
 ![devices morphing](http://digitalsynopsis.com/wp-content/uploads/2015/10/gif-icons-menu-transition-animations-morphing-devices.gif)
 
@@ -44,7 +40,7 @@ theme: Dark Mode
 
 ---
 
-## m dot
+> m dot
 
 ^ One early solution to this new trend was to create "mdot" sites, or mobile versions of websites that would be served to mobile phones instead of the larger, fixed width desktop sites. So for a site that's optimized for mobile, there's a desktop version and a mobile version. When a web page is accessed, some type of detection code would determine if the user was on a mobile device and if so, redirect the user to the mobile version of the site. Good? Bad? Why?
 
@@ -203,10 +199,6 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 ^ When the real estate is the smallest, I want the main content on the top and the secondary content underneath. Since we're designing based on the content and not any one specific device, I'm going to wireframe out how my layout changes based on the content.
 
 ^ Should we code the small layout first, or the larger layout first?
-
----
-
-## Mobile First
 
 ^ Starting with a mobile first design is the best approach. It helps us solve the difficult problem of having very little available canvas. It helps us determine what's really important - what need's to be on this site. If we start with the larger layout, we'll end up either removing items we can't fit in the smaller canvas, or shoe-horning things in sloppily just to make it work.
 
@@ -519,7 +511,3 @@ html {
 - mobile first approach
 
 ^ The takeaways today are to make sure you are starting with structured, semantic HTML markup. Nothing else can be done unless the content is in place and well structured. Your sketches and wireframes are critical to this. Cheap, fast iterations will help figure out what needs to be included, what should be removed, and where it should all go, taking a mobile first approach the entire time.
-
----
-
-## For next week

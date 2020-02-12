@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 222
-
-## Inclusive Design Patterns
+> Inclusive Design Patterns
 
 ---
 
@@ -19,15 +17,13 @@ theme: Dark Mode
 
 ## The Button Example
 
-^ A designer with just enough knowledge of HTML, CSS and JavaScript wants to add a button to a webpage. They want to style the button to match the web site's design and branding, using a combination of color, images, and typography.
-
----
-
 ### The HTML
 
 ```html
 <div class="button"></div>
 ```
+
+^ A designer with just enough knowledge of HTML, CSS and JavaScript wants to add a button to a webpage. They want to style the button to match the web site's design and branding, using a combination of color, images, and typography.
 
 ^ The HTML looks like this.
 
@@ -238,7 +234,7 @@ $$HTML / CSS / JavaScript$$
 
 ---
 
-## Managing Assets
+> Managing Assets
 
 ^ It is critical the resources we are using to enhance the page content do not stand in the way of that content. On slower networks, the content should arrive as soon as possible. It's what the user went to the page for.
 
@@ -437,7 +433,7 @@ Conventional practices:
 
 ---
 
-## Typesetting
+> Typesetting
 
 ^ Once you have your typeface selected, the focus shifts to the composition. Making provisions to measure, justification and leading will aid in overall legibility.
 
@@ -560,13 +556,9 @@ p {
 
 ---
 
-### Video
+![fit](http://digm.drexel.edu/crs/IDM222/presentations/images/CC-01.png)
 
 ^ Sometimes it's just better to be _shown_ rather than told about how something works. It's simply a better way of learning certain things. Other time I might want to be told by _not_ shown, because I need to be looking at something different at the same time. In some cases, I might want to be shown _and_ told - let's say I'm on a bus without headphones handy. I want to be shown and told, without blaring audio at fellow passengers. Or perhaps I'm watching a speaker in a video that does not speak the same native language I do.
-
----
-
-![fit](http://digm.drexel.edu/crs/IDM222/presentations/images/CC-01.png)
 
 ^ A well-captioned video is just the ticket. Captions also cater to those who are deaf and hard of hearing, but not just them. Captions are simply "another way to consume the same content".  Captions are only available if the video itself can be downloaded or streamed. This is why video that contains dialog should be accompanied by a transcript.
 
@@ -632,7 +624,7 @@ But browser vendors couldn't agree on a codec
 
 ---
 
-## Writing Better Content
+> Writing Better Content
 
 ^ Part of designing inclusively is the actual content. In many cases, the developer is not actually writing the content, however, you can offer guidance where appropriate and help your clients make better choices with how they write their content. Let's look at an example.
 
@@ -705,18 +697,14 @@ But browser vendors couldn't agree on a codec
 
 ---
 
-## Inclusive Conclusion
+> Inclusive Conclusion
 
 ^ The goal of this discussion is to make you think about how you can write and build web applications that are available to the largest number of possible users. Shortcuts may save time now, but they come at the expense of those counting on you as the developer to keep their interests and needs in mind. No one likes feeling left out.
 
 ---
 
-## Example Time
+> Example Time
 
 ^ _examples/inclusive-design/article_
 
 ^ _examples/inclusive-design/theme-switcher_
-
----
-
-## For Next Week

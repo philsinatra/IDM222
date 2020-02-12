@@ -2,11 +2,9 @@ build-lists: true
 footer: IDM 222: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Dark Mode
+theme: Work, 1
 
-# IDM 222
-
-## CSS Grid
+> CSS Grid
 
 ^ CSS Grid Layout (aka "Grid"), is a two-dimensional grid-based layout system that aims to do nothing less than completely change the way we design grid-based user interfaces. CSS has always been used to lay out our web pages, but it's never done a very good job of it. First we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox helped out, but it's intended for simpler one-dimensional layouts, not complex two-dimensional ones (Flexbox and Grid actually work very well together). Grid is the very first CSS module created specifically to solve the layout problems we've all been hacking our way around for as long as we've been making websites.
 
@@ -104,19 +102,13 @@ $$
 
 ## Enter CSS Grid
 
----
-
-## [Can I Use It](http://caniuse.com/#feat=css-grid)
+- [Can I Use It](http://caniuse.com/#feat=css-grid)
 
 ^ Grid is one of the most powerful CSS modules ever introduced. As of March 2017, Grid is available in Chrome, Firefox, Safari and iOS Safari. Internet Explorer 10 and 11 on the other hand support it, but it's an old implementation with an outdated syntax. We'll need to use some vendor prefixes to get it working properly.
 
 ---
 
 ## Terminology
-
-^ Before diving into the concepts of Grid it's important to understand the terminology. Since the terms involved here are all conceptually similar, it's easy to confuse them with one another if you don't first memorize their meanings defined by the Grid specification.
-
----
 
 ### Grid Container
 
@@ -127,6 +119,8 @@ $$
   <div class="item item-3"></div>
 </div>
 ```
+
+^ Before diving into the concepts of Grid it's important to understand the terminology. Since the terms involved here are all conceptually similar, it's easy to confuse them with one another if you don't first memorize their meanings defined by the Grid specification.
 
 ^ The element on which `display: grid` is applied. It's the direct parent of all the grid items. In this example `container` is the grid container.
 
@@ -1075,17 +1069,13 @@ $$
 
 ---
 
-## Example Time
+> Example Time
 
 ---
 
 ## Let's Play
 
 [CSS Grid Garden](http://cssgridgarden.com)
-
----
-
-## For next week
 
 ---
 
