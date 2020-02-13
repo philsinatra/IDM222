@@ -192,7 +192,7 @@ transform-origin   Changes the default origin point
 
 ```tex
 animation                 shorthand
-animation-name            name of the @keframes rule
+animation-name            name of the @keyframes rule
 animation-duration        (milli)seconds length
 animation-delay           (milli)seconds before start
 animation-iteration-count repeat count
