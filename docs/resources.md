@@ -8,7 +8,7 @@
 - [04 Grid](http://digm.drexel.edu/crs/IDM222/presentations/pdf/04-grid.pdf)
 - [05 Responsive Images](http://digm.drexel.edu/crs/IDM222/presentations/pdf/05-responsive-images.pdf)
 - [06 CSS Animations & Transitions](http://digm.drexel.edu/crs/IDM222/presentations/pdf/06-animations-transitions.pdf)
-- [07 Inclusive Design Patterns](http://digm.drexel.edu/crs/IDM222/presentations/pdf/IDM222-08-inclusive_design.pdf)
+- [07 Inclusive Design Patterns](http://digm.drexel.edu/crs/IDM222/presentations/pdf/07-inclusive-design.pdf)
 - [08 Preprocessors](http://digm.drexel.edu/crs/IDM222/presentations/pdf/08-preprocessors.pdf)
 
 ## Reading Material
