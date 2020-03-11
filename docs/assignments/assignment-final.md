@@ -26,8 +26,5 @@ Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) u
 
 1. A link to your self hosted website project page. From this page, I can fully engage the project and have access to all supplementary pages and functions.
 1. A link to your GitHub repository containing the code for your final project. Remember: a well maintained repository does not include binary files, but these files are essential to your project. Host the files on your server and use documentation within your project to include references and links for downloads of critical binary files.
-1. Attach an image in Blackboard that shows you have deleted all of the Slack files in your account.
-
-![Slack Images](http://digm.drexel.edu/crs/cdn/slack-delete.png)
 
 **Late submissions receive zero points.**
