@@ -1,8 +1,30 @@
 build-lists: true
-footer: IDM 222: Web Authoring II
+footer: IDM 221: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
+
+# IDM 221
+
+## Web Design II
+
+### Media Queries
+
+---
+
+# Objectives
+
+- Discuss the Responsive Web Design History & Concepts
+- Preparing For Responsive Implementation
+- Introduce Media Queries
+
+---
+
+# Objective
+
+## Discuss the History Responsive Web Design
+
+---
 
 ## Responsive Web Design
 
@@ -182,7 +204,11 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */}
 
 ---
 
-## Preparation
+# Objective
+
+## Preparing For Responsive Implementation
+
+---
 
 ### Wireframe
 
@@ -373,6 +399,12 @@ html {
 
 ---
 
+# Objective
+
+## Introduce Media Queries
+
+---
+
 ## Media Queries
 
 - width and height of the viewport
@@ -470,37 +502,9 @@ html {
 @media print { /* print only styles */ }
 ```
 
----
-
-![Chevy Chase](http://www.reactiongifs.com/r/2013/01/relieved.gif)
-
-^ Keep calm. Let's build an example.
-
 ^ (_examples/media-queries/01-rwd.html_)
 
 ^ (_examples/media-queries/02-rwd.html_)
-
----
-
-![Mozilla Devtools](https://soledadpenades.com/imgs/2014/goto/devtools_responsive.gif)
-
-^ As you develop a website using a responsive design, you'll want to test it in devices of various sizes to be sure it works as expected. The best way to do this is deploy the design to a web server and test on as many devices as possible. It's a nice thought, but not very practical. Another option is to use the device emulators and browser simulators that are available for many of the most popular mobile devices and browsers. A simpler way yet is to use the developer tools that are provided by most modern browsers. Let's look at a few (Chrome, Firefox).
-
----
-
-## Still To Come
-
-- flexible images
-- flexbox
-- grid
-- inclusive design / accessibility
-- preprocessors
-
----
-
-![Cube](http://i.giphy.com/SDxzM5LAVq5Tq.gif)
-
-^ If you feel confused, don't worry. The best way to learn this is to try it. Once you see it in action for yourself it will be clearer and you can begin applying the concepts to your site.
 
 ---
 

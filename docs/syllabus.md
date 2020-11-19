@@ -19,16 +19,16 @@ By the end of the course, student will be able to
 
 | Week | Topic |
 | ---- | ----- |
-| Week 1 | Introduction |
-| Week 2 | Responsive Web Design: Media Queries |
-| Week 3 | Flexbox |
-| Week 4 | CSS Grid |
-| Week 5 | Responsive Images |
-| Week 6 | CSS Transitions, Transforms, Animations & Filters |
-| Week 7 | Inclusive Design |
-| Week 8 | Preprocessors |
-| Week 9 | Variable Fonts & Demo Lab |
-| Week 10 | Open Lab |
+| Week 1 | [Introduction](../slides/introduction.md) |
+| Week 2 | [Responsive Web Design: Media Queries](../slides/media-queries.md) |
+| Week 3 | [Flexbox](../slides/flexbox.md) |
+| Week 4 | [CSS Grid](../slides/grid.md) |
+| Week 5 | [Responsive Images](../slides/responsive-images.md) |
+| Week 6 | [CSS Transitions, Transforms, Animations & Filters](../slides/animations-transitions.md) |
+| Week 7 | [Inclusive Design Patterns](../slides/inclusive-design.md) |
+| Week 8 | [Custom Properties](../slides/custom-properties.md) |
+| Week 9 | Open Lab |
+| Week 10 | Final Critiques |
 
 ## Required Materials
 
@@ -113,6 +113,10 @@ Please also see the official Drexel university policy on Academic Dishonesty at 
 ## Statement for Students with Disabilities
 
 Students with disabilities requesting accommodations and services at Drexel University need to present a current accommodation verification letter (AVL) to faculty before accommodations can be made. This MUST be done prior to the midterm! AVL’s are issued by the Office of Disability Services (ODS). For additional information, contact ODS at [http://www.drexel.edu/oed/policies/Overview/](http://www.drexel.edu/oed/policies/Overview/)
+
+## COVID-19 Syllabus Addendum
+
+- [COVID-19 Syllabus Addendum](https://github.com/Drexel-University-IDM/COVID19)
 
 ## Acknowledging Conditions and Obligations in Syllabus
 

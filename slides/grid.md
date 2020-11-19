@@ -1,10 +1,27 @@
 build-lists: true
-footer: IDM 222: Web Authoring II
+footer: IDM 221: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-> CSS Grid
+# IDM 221
+
+## Web Design II
+
+### Grid
+
+---
+
+# Objectives
+
+- Introduce Grid
+- Implement Grid
+
+---
+
+# Objective
+
+## Introduce Grid
 
 ^ CSS Grid Layout (aka "Grid"), is a two-dimensional grid-based layout system that aims to do nothing less than completely change the way we design grid-based user interfaces. CSS has always been used to lay out our web pages, but it's never done a very good job of it. First we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox helped out, but it's intended for simpler one-dimensional layouts, not complex two-dimensional ones (Flexbox and Grid actually work very well together). Grid is the very first CSS module created specifically to solve the layout problems we've all been hacking our way around for as long as we've been making websites.
 
@@ -105,6 +122,12 @@ $$
 - [Can I Use It](http://caniuse.com/#feat=css-grid)
 
 ^ Grid is one of the most powerful CSS modules ever introduced. As of March 2017, Grid is available in Chrome, Firefox, Safari and iOS Safari. Internet Explorer 10 and 11 on the other hand support it, but it's an old implementation with an outdated syntax. We'll need to use some vendor prefixes to get it working properly.
+
+---
+
+# Objective
+
+## Implement Grid
 
 ---
 

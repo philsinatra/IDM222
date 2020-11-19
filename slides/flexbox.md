@@ -1,12 +1,31 @@
 build-lists: true
-footer: IDM 222: Web Authoring II
+footer: IDM 221: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-# Flexbox
+# IDM 221
 
-![fill](https://spin.atomicobject.com/wp-content/uploads/20160615142357/flexbox-animation.gif)
+## Web Design II
+
+### Flexbox
+
+---
+
+# Objectives
+
+- Introduce Flexbox
+- Implement Flexbox
+
+---
+
+# Objective
+
+## Introduce Flexbox
+
+---
+
+![100%](https://spin.atomicobject.com/wp-content/uploads/20160615142357/flexbox-animation.gif)
 
 ^ The _Flexbox Layout_ (Flexible Box) module (currently a W3C Last Call Working Draft) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").
 
@@ -14,7 +33,7 @@ theme: Work, 1
 
 ---
 
-![fit](https://www.bram.us/wordpress/wp-content/uploads/2016/10/fukol-demo.gif)
+![100%](https://www.bram.us/wordpress/wp-content/uploads/2016/10/fukol-demo.gif)
 
 ^ Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).
 
@@ -61,6 +80,12 @@ theme: Work, 1
 ![fit](http://digm.drexel.edu/crs/IDM222/presentations/images/flexbox-cross_size.png)
 
 ^ **cross size** - The width or height of a flex item, whichever is in the cross dimension, is the item's cross size. The cross size property is whichever of `width` or `height` that is in the cross dimension
+
+---
+
+# Objective
+
+## Implement Flexbox
 
 ---
 

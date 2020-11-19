@@ -1,12 +1,27 @@
 build-lists: true
-footer: IDM 222: Web Authoring II
+footer: IDM 221: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-> Responsive Images
+# IDM 221
 
-^ We need to add that rule. We need to prevent the image from exceeding the width of its container. We need flexible or fluid images.
+## Web Design II
+
+### Responsive Images
+
+---
+
+# Objectives
+
+- Review Resize Techniques
+- Introduce Responsive Image Techniques
+
+---
+
+# Objective
+
+## Review Resize Techniques
 
 ---
 
@@ -47,6 +62,12 @@ video {
 ^ To support a 4k display, you'll need a large, high res image. (_click_) Using this technique on a mobile device, the device downloads this very large file and then has to scale the image down to fit within your mobile layout. That takes a fair amount of processing power and device memory.
 
 ^ (_click_) The file size of this image will also be large, larger than is needed in the mobile environment. The mobile device is never going to render the image at 1200 pixels, why should a mobile user have to download that large file?
+
+---
+
+# Objective
+
+## Introduce Responsive Image Techniques
 
 ---
 
@@ -274,8 +295,6 @@ video {
 
 ---
 
-![crying man](http://i.giphy.com/d2lcHJTG5Tscg.gif)
-
-^ Example Time
+## Example Time
 
 ^ _examples/responsive-images/_

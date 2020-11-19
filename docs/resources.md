@@ -2,14 +2,14 @@
 
 ## Lecture Slides
 
-- [01 Introduction](http://digm.drexel.edu/crs/IDM222/presentations/pdf/01-introduction.pdf)
-- [02 Media Queries](http://digm.drexel.edu/crs/IDM222/presentations/pdf/02-media-queries.pdf)
-- [03 Flexbox](http://digm.drexel.edu/crs/IDM222/presentations/pdf/03-flexbox.pdf)
-- [04 Grid](http://digm.drexel.edu/crs/IDM222/presentations/pdf/04-grid.pdf)
-- [05 Responsive Images](http://digm.drexel.edu/crs/IDM222/presentations/pdf/05-responsive-images.pdf)
-- [06 CSS Animations & Transitions](http://digm.drexel.edu/crs/IDM222/presentations/pdf/06-animations-transitions.pdf)
-- [07 Inclusive Design Patterns](http://digm.drexel.edu/crs/IDM222/presentations/pdf/07-inclusive-design.pdf)
-- [08 Preprocessors](http://digm.drexel.edu/crs/IDM222/presentations/pdf/08-preprocessors.pdf)
+- [Introduction](http://cdn.philsinatra.com/idm/idm222/introduction.pdf)
+- [Responsive Web Design: Media Queries](http://cdn.philsinatra.com/idm/idm222/media-queries.pdf)
+- [Flexbox](http://cdn.philsinatra.com/idm/idm222/flexbox.pdf)
+- [CSS Grid](http://cdn.philsinatra.com/idm/idm222/grid.pdf)
+- [Responsive Images](http://cdn.philsinatra.com/idm/idm222/responsive-images.pdf)
+- [CSS Transitions, Transforms, Animations & Filters](http://cdn.philsinatra.com/idm/idm222/animations-transitions.pdf)
+- [Inclusive Design Patterns](http://cdn.philsinatra.com/idm/idm222/inclusive-design.pdf)
+- [Custom Properties](http://cdn.philsinatra.com/idm/idm222/custom-properties.pdf)
 
 ## Reading Material
 
@@ -77,7 +77,5 @@
 - [Sublime Text](https://www.sublimetext.com)
 - [Atom](https://atom.io)
 - [Transmit](https://panic.com/transmit/)
-- [Fetch](http://fetchsoftworks.com)
 - [Cyberduck](https://cyberduck.io)
 - [Drexel Software](https://software.drexel.edu)
-- [SourceSetr](http://philsinatra.com/sourcesetr.html)

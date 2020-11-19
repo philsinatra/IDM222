@@ -1,21 +1,29 @@
 build-lists: true
-footer: IDM 222: Web Authoring II
+footer: IDM 221: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-## CSS Fun
+# IDM 221
 
-![fill](https://webdesignledger.com/wp-content/uploads/2015/11/Singing-Octo-by-Fede-Cook.gif)
+## Web Design II
+
+### CSS Transitions, Transforms, Animations & Filters
 
 ---
 
-## CSS3 Features
+# Objectives
 
-- transitions
-- transformations
-- animations
-- filters
+- Introduce CSS Transitions
+- Introduce CSS Transformations
+- Introduce CSS Animations
+- Introduce CSS Filters
+
+---
+
+# Objective
+
+## Introduce CSS Transitions
 
 ---
 
@@ -100,10 +108,6 @@ a:hover {
 
 ^ It changes the color to red, and the font-size to 120%. This means when the user hovers the mouse over the anchor element, the two values in the transition are changed. As a result, the transition takes place. When the user stops hovering, the transition returns to the original state.
 
----
-
-![Yoda](http://i.imgur.com/4jeBvb8.gif)
-
 ^ Let's test this in a browser. (_examples/animations-transitions/01-transitions.html_)
 
 ---
@@ -122,7 +126,11 @@ a:hover {
 
 ---
 
-## CSS Transforms
+# Objective
+
+## Introduce CSS Transformations
+
+---
 
 ### 2D Transforms
 
@@ -180,11 +188,9 @@ transform-origin   Changes the default origin point
 
 ---
 
-## CSS Animations
+# Objective
 
-![CSS animation example](https://images.thoughtbot.com/blog+animations/animation-direction.gif)
-
-^ CSS3 _animations_ let you create frame-based animations that are similar to what you might create with a program like Flash. They can be simple or complex and can animate more than one CSS property at the same time.
+## Introduce CSS Animations
 
 ---
 
@@ -286,6 +292,12 @@ h1 {
 ## Great. Can I Use CSS Animations
 
 [Can I Use It?](http://caniuse.com/#feat=css-animation)
+
+---
+
+# Objective
+
+## Introduce CSS Filters
 
 ---
 

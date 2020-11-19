@@ -1,10 +1,26 @@
 build-lists: true
-footer: IDM 222: Web Authoring II
+footer: IDM 221: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-# Overview
+# IDM 221
+
+## Web Design II
+
+### Introduction
+
+---
+
+[.build-lists: false]
+
+![left](images/avatar.jpg)
+
+## About Me
+
+- Name: Phil Sinatra
+- Email: ps42@drexel.edu
+- GitHub: [@philsinatra](https://github.com/philsinatra)
 
 ## About This Course
 
@@ -12,6 +28,19 @@ theme: Work, 1
 - [Course Repository](https://github.com/philsinatra/IDM222)
 
 ^ All course information including syllabus, overview and assignments will be managed through Drexel's Blackboard (BBLearn) system. Let's log in and review the syllabus and course information now.
+
+---
+
+# Objectives
+
+- HTML & CSS Quick Review
+- Discuss Responsive Web Design
+
+---
+
+# Objective
+
+## HTML & CSS Quick Review
 
 ---
 
@@ -52,6 +81,12 @@ aside {
 ```
 
 ^ CSS (Cascading Style Sheet)s are how we apply those visual styles to our pages and the elements within. The stylesheet is a set of rules made up of groups of properties and values. These rules define how everything looks on our pages. CSS is the presentation of our project - similar to the paint, wallpaper, floors etc. that make our house look and feel nice.
+
+---
+
+# Objective
+
+## Discuss Responsive Web Design
 
 ---
 

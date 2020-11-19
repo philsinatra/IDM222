@@ -53,6 +53,5 @@ Thumbs.db
 build
 examples/grid/**/*.jpg
 graphics
-instructor_materials/WORKSHOP.md
-instructor_materials/images
+slides/WORKSHOP.md
 node_modules

@@ -1,10 +1,26 @@
 build-lists: true
-footer: IDM 222: Web Authoring II
+footer: IDM 221: Web Authoring II
 slidenumbers: true
 autoscale: true
-theme: Work, 1
+theme: Cobalt2, 1
 
-> Inclusive Design Patterns
+# IDM 221
+
+## Web Design II
+
+### Inclusive Design Patterns
+
+---
+
+# Objectives
+
+- Discuss Various Forms of Inclusive Design
+
+---
+
+# Objective
+
+## Discuss Various Forms of Inclusive Design
 
 ---
 
@@ -75,10 +91,6 @@ button.addEventListener('click', function() {
 - untranslatable
 
 ^ It doesn't stop there. (click) The `<div>` element is not focusable by keyboard. Anyone choosing to navigate the page with their keyboard will not be able to select the button. (click) The `<div>` element is also semantically inert, offering no valuable information to screen readers that this element is being used as a button. (click) The label of the button is part of the image, and therefore also unavailable to assistive technology. (click) The button is untranslatable into different languages, making it excluded international audiences.
-
----
-
-![James Vanderbeek crying](http://i.giphy.com/QB78LMb32YqoE.gif)
 
 ^ That's a lot of people being left out. Being able to anticipate these problems can help us achieve more, sometimes by doing less. You need to know when to design and when to employ what is _already designed_.
 

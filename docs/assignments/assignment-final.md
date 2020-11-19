@@ -25,6 +25,6 @@ Your final project represents the culmination of past ten weeks.  This project w
 Submit the following items in [Drexel Blackboard](https://learn.dcollege.net/) under **Final Project**:
 
 1. A link to your self hosted website project page. From this page, I can fully engage the project and have access to all supplementary pages and functions.
-1. A link to your GitHub repository containing the code for your final project. Remember: a well maintained repository does not include binary files, but these files are essential to your project. Host the files on your server and use documentation within your project to include references and links for downloads of critical binary files.
+2. A link to your GitHub repository containing the code for your final project. Remember: a well maintained repository does not include binary files, but these files are essential to your project. Host the files on your server and use documentation within your project to include references and links for downloads of critical binary files. Your repository **must** follow the following naming convention: _idm222-xxx123_ where _xxx123_ is your student ID shorthand.
 
 **Late submissions receive zero points.**
