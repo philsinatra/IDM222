@@ -1,108 +1,145 @@
+/**
+- Build color system WITHOUT primary, foreground, background
+- Skip all color based media queries
+- Build page styles
+- Add primary, foreground, background custom properties
+- Add color scheme media query
+- Add breakpoint media query
+*/
+
 :root {
-	--blue-lightest: #4DC0FF;
-	--blue-light: #4DC0FF;
-	--blue: #0084CC;
-	--blue-dark: #26607F;
-	--blue-darkest: #00527F;
+  --color-magenta-400: #ca2996;
+  --color-magenta-500: #d83790;
+  --color-magenta-600: #e2499d;
+  --color-magenta-700: #ec5aaa;
+  --color-green-400: #268e6c;
+  --color-green-500: #2d9d78;
+  --color-green-600: #33ab84;
+  --color-green-700: #39b990;
+  --color-blue-400: #1473e6;
+  --color-blue-500: #2680eb;
+  --color-blue-600: #378ef0;
+  --color-blue-700: #4b9cf5;
+  --color-black: #000;
+  --color-gray-50: #080808;
+  --color-gray-75: #1a1a1a;
+  --color-gray-100: #1b1c1e;
+  --color-gray-150: #1f1f1f;
+  --color-gray-200: #2b2b2b;
+  --color-gray-300: #393939;
+  --color-gray-400: #494949;
+  --color-gray-500: #5c5c5c;
+  --color-gray-600: #7c7c7c;
+  --color-gray-700: #a2a2a2;
+  --color-gray-800: #c8c8c8;
+  --color-gray-850: #e5e5e5;
+  --color-gray-900: #efefef;
+  --color-gray-1000: #fafafa;
+  --color-white: #fff;
 
-	--red-lightest: #F5A6A5;
-	--red-light: #E54545;
-	--red: #E50000;
-	--red-dark: #990000;
-	--red-darkest: #660000;
+  --primary-light: var(--color-blue-700);
+  --primary: var(--color-blue-500);
+  --primary-dark: var(var(--color-blue-400));
 
-	--primary-light: var(--blue-light);
-	--primary: var(--blue);
-	--primary-dark: var(--blue-darkest)
+  --background: var(--color-gray-1000);
+  --foreground: var(--color-gray-50);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-light: var(--color-green-700);
+    --primary: var(--color-green-500);
+    --primary-dark: var(var(--color-green-400));
+
+    --background: var(--color-gray-50);
+    --foreground: var(--color-gray-1000);
+  }
+}
+
+@media (min-width: 56.25em) {
+  /* 900px */
+  :root {
+    --primary-light: var(--color-magenta-700);
+    --primary: var(--color-magenta-500);
+    --primary-dark: var(var(--color-magenta-400));
+  }
 }
 
 html {
-	box-sizing: border-box;
-	font-size: 100%;
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-	background-color: var(--primary-dark);
-	font: 100%/1.4 Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  font: 100%/1.4 Arial, sans-serif;
 }
 
 header {
-	background-color: var(--primary);
-	color: white;
-	padding: 1rem;
-	text-align: center;
+  background-color: var(--primary);
+  color: var(--color-gray-1000);
+  padding: 1rem;
+  text-align: center;
 }
 
 .contain {
-	background-color: white;
-	margin: 1rem auto;
-	/* 960/16 */
-	max-width: 60rem;
-	padding: 1rem;
-	width: 80%;
+  margin: 1rem auto;
+  /* 960/16 */
+  max-width: 60rem;
+  padding: 1rem;
+  width: 80%;
 }
 
 aside {
-	background-color: var(--primary-light);
-	padding: 1rem;
+  background-color: var(--primary-light);
+  padding: 1rem;
 }
 
 aside h3 {
-	margin-top: 0;
+  margin-top: 0;
 }
 
 aside p:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 37.5em) {
+  /* 600px */
+  .contain {
+    overflow: auto;
+    width: 100%;
+  }
 
-	/* 600px */
-	.contain {
-		overflow: auto;
-		width: 100%;
-	}
+  header {
+    text-align: left;
+  }
 
-	header {
-		text-align: left;
-	}
+  main,
+  aside {
+    float: left;
+  }
 
-	main,
-	aside {
-		float: left;
-	}
+  main {
+    padding-right: 1rem;
+    width: 60%;
+  }
 
-	main {
-		padding-right: 1rem;
-		width: 60%;
-	}
-
-	aside {
-		width: 40%;
-	}
+  aside {
+    width: 40%;
+  }
 }
 
 @media (min-width: 56.25em) {
-
-	/* 900px */
-	:root {
-		--primary-light: var(--red-light);
-		--primary: var(--red);
-		--primary-dark: var(--red-darkest)
-	}
-
-	header {
-		background-color: red;
-	}
-
-	main,
-	aside {
-		width: 50%;
-	}
+  /* 900px */
+  main,
+  aside {
+    width: 50%;
+  }
 }
