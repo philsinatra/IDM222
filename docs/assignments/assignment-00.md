@@ -20,7 +20,7 @@ This assignment focuses on getting setup and preparing for your final project.
 
 #### Now it's time to
 
-- Review your IDM222 project
+- Review your IDM221 project
   - content
   - organization
   - repository
