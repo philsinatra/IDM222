@@ -88,7 +88,7 @@ h1 { font-weight: 900; }
 h3 { font-weight: 600; }
 ```
 
-However this doesn’t work as expected without modifying the `@font-face` rule. When you include a font-weight descriptor in an `@font-face` rule, you are telling the browser that the font corresponds to that weight, and that weight only. When you omit the font-weightdescriptor, the browser treats the rule as if you set font-weight:400. This is the case whether or not your font is variable with a weight axis - the font will be 'clamped' to a weight of 400.
+However this doesn’t work as expected without modifying the `@font-face` rule. When you include a font-weight descriptor in an `@font-face` rule, you are telling the browser that the font corresponds to that weight, and that weight only. When you omit the font-weight descriptor, the browser treats the rule as if you set `font-weight:400`. This is the case whether or not your font is variable with a weight axis - the font will be 'clamped' to a weight of 400.
 
 To make use of the weight axis, and for the font-weight properties to work as you might expect, we needed to add a font-weight range to the `@font-face` rule:
 

@@ -519,7 +519,7 @@ html {
 ### Color Scheme
 
 ```css
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light | dark | no-preference) {
   body {
     background: #1e1e1e;
     color: white;
@@ -529,14 +529,14 @@ html {
 
 ^ You might actually have heard about the `prefers-color-scheme` media query already. This one lets you react to whether the user has turned on so-called “dark mode” on their device. In other words – adding “dark mode” to your app is now a few lines of code!
 
-^ This feature is already widely supported in browsers, and has three possible values – light, dark, and no-preference. Here’s an example where we change the background color of the site based on preference:
+^ This feature is already widely supported in browsers, and has three possible values – `light`, `dark`, and `no-preference`. Here’s an example where we change the background color of the site based on preference:
 
 ---
 
 ### Contrast
 
 ```css
-@media (prefers-contrast) {
+@media (prefers-contrast: no-preference | high) {
   :root {
     --text-color: black;
   }
@@ -545,25 +545,25 @@ html {
 
 ^ The `prefers-contrast` media query lets you cater to users who prefer high contrast content compared to your original design.
 
-^ There’s two values here – no-preference and high. There’s some discussion in the draft document about splitting high into increased and extremely-high, but nothing is certain yet. That’s probably the reason why there’s no support for this one yet. But when they decide, you’ll know what to write!
+^ There’s two values here – `no-preference` and `high`. There’s some discussion in the draft document about splitting high into `increased` and `extremely-high`, but nothing is certain yet. That’s probably the reason why there’s no support for this one yet. But when they decide, you’ll know what to write!
 
 ---
 
 ### Reduced Motion
+
+```css
+@media (prefers-reduced-motion: no-preference | reduce) {
+  * {
+    transition-duration: 0.05s;
+  }
+}
+```
 
 ^ Some users aren’t fans of animations and transitions. To some unlucky few, these kinds of movements can make them physically sick! That’s why most devices now support a way to tune down the transitions you find in most modern UIs.
 
 ^ With the `prefers-reduced-motion` media query, you can respect that wish as well. Use it to reduce those “bouncy” animations, fading images and “fun” transitions a bit. Note that you don’t necessarily have to remove all movement, but reduce it.
 
 ^ Browser support for this one is pretty good already, and is a “boolean” value too – `no-preference` or `reduce`. Here’s an example:
-
-```css
-@media (prefers-reduced-motion) {
-  * {
-    transition-duration: 0.05s;
-  }
-}
-```
 
 ---
 
