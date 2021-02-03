@@ -17,6 +17,12 @@ theme: Cobalt2, 1
 - Introduce Grid
 - Implement Grid
 
+^ Our objectives are to...
+
+^ Recall how Flexbox provides the `flex-wrap` property, which allows us to determine if flex items are allowed to wrap to multiple lines.
+
+^ [../examples/flexbox/ex002.html](../examples/flexbox/ex002.html)
+
 ---
 
 # Objective
