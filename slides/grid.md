@@ -383,12 +383,12 @@ $$
 
 ---
 
-## `grid-column-gap` & `grid-row-gap`
+## `column-gap` & `row-gap`
 
 ```css
 .container {
-  grid-column-gap: <line-size>;
-  grid-row-gap: <line-size>;
+  column-gap: <line-size>;
+  row-gap: <line-size>;
 }
 ```
 
@@ -406,8 +406,8 @@ $$
 .container {
   grid-template-columns: 100px 50px 100px;
   grid-template-rows: 80px auto 80px;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
+  column-gap: 10px;
+  row-gap: 15px;
 }
 ```
 
@@ -423,15 +423,15 @@ $$
 
 ```css
 .container {
-  gap: <grid-row-gap> <grid-column-gap>;
+  gap: <row-gap> <column-gap>;
 }
 ```
 
-^ A shorthand for grid-row-gap and grid-column-gap
+^ A shorthand for row-gap and column-gap
 
 ^ Values:
 
-^ `<grid-row-gap>` `<grid-column-gap>` - length values
+^ `<row-gap>` `<column-gap>` - length values
 
 ---
 
@@ -445,7 +445,7 @@ $$
 }
 ```
 
-^ If no `grid-column-gap` is specified, it's set to the same value as `grid-row-gap`.
+^ If no `column-gap` is specified, it's set to the same value as `row-gap`.
 
 ---
 
